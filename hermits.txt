@@ -2,7 +2,12 @@
 pagurus key is page 190 (191)
 TAXONOMIC INDEX 246 (247)
 
+Diogenidae key 57
+Diacanthurus key 135
+Lophopagurus key 149
+Paguridae family key 104
 
+Dardanus lagopodes has black "knees" and D. sanguinolentus red "knees", this appears to lack those and has different coloured eye stalks.
 
 
 Hermit Crabs Superfamily Paguroidea
