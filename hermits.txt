@@ -1,0 +1,40 @@
+
+pagurus key is page 190 (191)
+TAXONOMIC INDEX 246 (247)
+
+
+
+
+Hermit Crabs Superfamily Paguroidea
+    - Left-handed Hermit Crabs Family Diogenidae
+        Genus Areopaguristes
+            Areopaguristes setosus
+                p73(74)
+                https://www.marinespecies.org/aphia.php?p=taxdetails&id=520664
+        Genus Diacanthurus
+            Diacanthurus spinulimanus
+            Diacanthurus rubricatus
+        Genus Dardanus
+            Dardanus arrosor
+            Dardanus longior
+            Dardanus sanguinolentus
+        Genus Paguristes
+            Paguristes barbatus
+        Genus Calcinus
+            Queensland Hermit Crab Calcinus sirius
+    - Pagurid Hermit Crabs Family Paguridae
+        Genus Lophopagurus
+            Subgenus Lophopagurus
+                Lophopagurus thompsoni
+                Lophopagurus pumilus
+                Lophopagurus foresti
+            Subgenus Australeremus
+                Lophopagurus triserratus
+                Lophopagurus laurentae
+        Genus Pagurus
+            New Zealand Hermit Crab Pagurus novizealandiae
+            Pagurus traversi
+            Pagurus albidianthus
+        Genus Pagurixus
+            Pagurixus hectori
+
