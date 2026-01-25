@@ -1,0 +1,171 @@
+<html>
+<head>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="data/hermit-data.js"></script>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+        }
+        .haveZeroPokemon {
+            color: red;
+        }
+        .haveSomePokemon {
+            color: blue;
+        }
+        .crab-tile-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .crab-tile {
+            width: 200px;
+            height: 200px;
+            margin: 1em;
+            border: 3px red solid;
+        }
+        .crab-image {
+            max-width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <script>
+        
+        function AttributionModel(attributionData) {
+            return {
+                name: attributionData.name,
+                link: attributionData.link,
+                licenseUrl: attributionData.licenseUrl
+            }
+        }
+
+        function ImageModel(imageData) {
+            return {
+                url: imageData.url,
+                attribution: new AttributionModel(imageData.attribution)
+            }
+        }
+
+        function CrabModel(crabData) {
+
+            self = this;
+            this.scientificName = crabData.scientificName;
+            this.memoirNiwaPage = crabData.memoirNiwaPage;
+            this.images = [];
+            this.currentImage = 0;
+
+            this.currentDisplayedImage = function() {
+                return this.images[this.currentImage]
+            }
+
+            // allow user to display the next image
+            this.navigateImageNext = function() {
+                this.currentImage = this.currentImage + 1;
+                if(this.currentImage >= this.images.length) {
+                    this.currentImage = 0;
+                }
+            }
+
+            this.initialise = function() {
+                console.log("initialise on CrabModel was called")
+                for(let imageData of crabData.images) {
+                    let imageModel = new ImageModel(imageData);
+                    self.images.push(imageModel);
+                }
+            }
+            this.initialise();
+
+        }
+
+        function pageModel() {
+            return {
+                // changes to the collection are reflected automatically in the html
+                pokemon : [ { name : 'Pikachu', type : 'Electric' }, { name: 'Squirtle', type: 'Water' }, { name: 'Bulbasaur', type: 'Plant' } ],
+
+                crabs : [],
+
+                // properties to bind to inputs
+                newPokemonName : '',
+                newPokemonType : '',
+
+                pageTitle : '<h3>Your pokemon</h3>',
+
+                // methods can be called on click
+                addNewPokemon() {
+                    this.pokemon.push({ name : this.newPokemonName, type : this.newPokemonType })
+                    this.newPokemonName = '';
+                    this.newPokemonType = '';
+                },
+
+                deletePokemon(name) {
+                    this.pokemon = this.pokemon.filter(function( item ) {
+                        return item.name !== name;
+                    });
+                },
+                init() {
+                    console.log("init in model call")
+                    for (let crabData of allCrabData) {
+                        var crabModel = new CrabModel(crabData);
+                        this.crabs.push(crabModel);
+                        console.log(this.crabs)
+                    }
+                }
+            }
+        };
+
+    </script>
+
+    <!-- bind the page model - can't do this on a template element -->
+    <div x-data="pageModel" x-init="console.log('pagemode init')">
+
+
+        Your crabbies are:<br/>
+        <div class="crab-tile-container">
+            <!-- x-for must be on a template item? keys are important if reordering? -->
+            <template x-for="crab in crabs" :key="crab.scientificName">
+                <div class="crab-tile">
+                    <!-- must only be a single child element in the template element -->
+                    <span x-text="crab.scientificName"></span><br/>
+                    <div class="crab-image-container">
+                        <img class="crab-image" alt="hermit crab image" :src="crab.currentDisplayedImage().url" />
+                    </div>
+                    <span x-text="crab.currentDisplayedImage().url"></span><br/>
+                    <span x-text="crab.currentImage"></span><br/><span @click="crab.navigateImageNext()">Next Image</span> 
+                </div>
+            </template>
+        </div>
+
+
+        <!-- x-html vs x-text = much the same as knockout.js -->
+        <p x-html="pageTitle"></p>
+        <!-- can use any js in a x-text etc -->
+        <!-- conditional classes, set using the shorthand for the x-bind -->
+        <div>You have <span x-text="pokemon.length"  :class="pokemon.length === 0 ? 'haveZeroPokemon' : 'haveSomePokemon'"></span> pokemon</div>
+        <br/>
+        <!-- conditionally show or hide html -->
+        <div x-show="pokemon.length === 0">
+            buddy, you ain't got no pokemons. Better get catching.
+        </div>
+        <div x-show="pokemon.length > 0">
+            Your pokemon are:<br/>
+            <!-- x-for must be on a template item? keys are important if reordering? -->
+            <template x-for="item in pokemon" :key="item.name">
+                <li>
+                    <!-- must only be a single child element in the template element -->
+                    <span x-text="item.name"></span> (<span x-text="item.type"></span>) - <span @click="deletePokemon(item.name)">delete</span>
+                </li>
+            </template>
+        </div>
+        <br/>
+        <!-- use x-bind for setting attributes -->
+        <span x-bind:style="'color:green;'">Add a new pokemon:</span>
+        <!-- model is used for inputs, bind it to an existing data value -->
+        <input x-model="newPokemonName" placeholder="Name ...">
+        <input x-model="newPokemonType" placeholder="Type ...">
+        <!-- shorthand; use @ for click -->
+        <button @click="addNewPokemon()">Add</button>
+    </div>
+</body>
+</html>

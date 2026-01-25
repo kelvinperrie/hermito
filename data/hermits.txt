@@ -14,8 +14,6 @@ Hermit Crabs Superfamily Paguroidea
     - Left-handed Hermit Crabs Family Diogenidae
         Genus Areopaguristes
             Areopaguristes setosus
-                p73(74)
-                https://www.marinespecies.org/aphia.php?p=taxdetails&id=520664
         Genus Diacanthurus
             Diacanthurus spinulimanus
             Diacanthurus rubricatus

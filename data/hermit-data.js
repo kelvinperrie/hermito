@@ -1,32 +1,10 @@
-var crabData = [
+var allCrabData = [
     {
-        commonName : "",
-        scientificName : "example",
-        aka : [],
-        memoirNiwaPage : 123123123,
-        natureWatchLink: "https://inaturalist.nz/taxa/something",
-        attributes : [
-            { key: "example" , values : ["square","round"] }
-        ],
-        details : [
-            { text: "Example text.", references: [1]}
-        ],
-        similarTo: [
-            { key: "Example", label: "Example Common Name" }
-        ],
-        images : [
-            { url : "images/crabs/something.jpg", "attribution" : { "name" : "Some due", "link" : "https://inaturalist.nz/observations/zzzzzzz", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
-        ],
-        references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
-        ]
-    },
-        {
         commonName : "",
         scientificName : "Areopaguristes setosus",
         aka : [],
         memoirNiwaPage : 73,
-        natureWatchLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
+        inaturalistLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -37,7 +15,8 @@ var crabData = [
             { key: "Example", label: "Example Common Name" }
         ],
         images : [
-            { url : "images/crabs/Areopaguristes setosus 01.jpg", "attribution" : { "name" : "lcolmer", "link" : "https://inaturalist.nz/observations/62745403", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+            { url : "images/crabs/Areopaguristes setosus 01.jpg", "attribution" : { "name" : "lcolmer", "link" : "https://inaturalist.nz/observations/62745403", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
+            { url : "images/crabs/Diacanthurus spinulimanus 01.jpg", "attribution" : { "name" : "Emilie & Victoria", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
             { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
@@ -48,7 +27,7 @@ var crabData = [
         scientificName : "Diacanthurus spinulimanus",
         aka : [],
         memoirNiwaPage : 135,
-        natureWatchLink: "https://inaturalist.nz/taxa/497510-Diacanthurus-spinulimanus",
+        inaturalistLink: "https://inaturalist.nz/taxa/497510-Diacanthurus-spinulimanus",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -70,7 +49,7 @@ var crabData = [
         scientificName : "Diacanthurus rubricatus",
         aka : [],
         memoirNiwaPage : 139,
-        natureWatchLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
+        inaturalistLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -92,7 +71,7 @@ var crabData = [
         scientificName : "Dardanus arrosor",
         aka : [],
         memoirNiwaPage : 81,
-        natureWatchLink: "https://inaturalist.nz/taxa/466901-Dardanus-arrosor",
+        inaturalistLink: "https://inaturalist.nz/taxa/466901-Dardanus-arrosor",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -114,7 +93,7 @@ var crabData = [
         scientificName : "Dardanus longior",
         aka : [],
         memoirNiwaPage : null,
-        natureWatchLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
+        inaturalistLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -136,7 +115,7 @@ var crabData = [
         scientificName : "Dardanus sanguinolentus",
         aka : [],
         memoirNiwaPage : null,
-        natureWatchLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
+        inaturalistLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -158,7 +137,7 @@ var crabData = [
         scientificName : "Paguristes barbatus",
         aka : [],
         memoirNiwaPage : 59,
-        natureWatchLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
+        inaturalistLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -180,7 +159,7 @@ var crabData = [
         scientificName : "Calcinus sirius",
         aka : [],
         memoirNiwaPage : null,
-        natureWatchLink: "https://inaturalist.nz/taxa/1080999-Calcinus-sirius",
+        inaturalistLink: "https://inaturalist.nz/taxa/1080999-Calcinus-sirius",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
@@ -202,7 +181,7 @@ var crabData = [
         scientificName : "Lophopagurus thompsoni",
         aka : [],
         memoirNiwaPage : 157,
-        natureWatchLink: "https://inaturalist.nz/taxa/603299-Lophopagurus-thompsoni",
+        inaturalistLink: "https://inaturalist.nz/taxa/603299-Lophopagurus-thompsoni",
         attributes : [
             { key: "example" , values : ["square","round"] }
         ],
