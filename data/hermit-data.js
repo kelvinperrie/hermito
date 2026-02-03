@@ -9,7 +9,13 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
+            { text: "Antennules, antennae, and eye stalks have no strong colouring and show as white or very light green. No banding on antennae."},
+            { text: "Claws covered in small bumps but can be furry. Left claws much larger than right.", references: [1]},
+            { text: "Carapace is from 4mm to 25.5mm.", references: [1]},
+            { text: "Mostly found from 15 to 22m, but can be intertidal.", references: [1]},
+            { text: "Habitat is shelly sand and shell-gravel.", references: [1]},
+            { text: "Found throughout New Zealand."}
         ],
         similarTo: [
             { key: "Example", label: "Example Common Name" }
@@ -19,7 +25,7 @@ var allCrabData = [
             { url : "images/crabs/Diacanthurus spinulimanus 01.jpg", "attribution" : { "name" : "Emilie & Victoria", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp73-78). NIWA" }
         ]
     },
         {
@@ -32,7 +38,13 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legshave purple vertical marks."},
+            { text: "Antennules and eye stalks red/orange, antennae striped red and white bands."},
+            { text: "Claws covered in small bumps."},
+            { text: "Dunno how big??????????"},
+            { text: "Dunno the depth????????"},
+            { text: "Habitat is muddy sand", references: [1]},
+            { text: "Found throughout New Zealand."}
         ],
         similarTo: [
             { key: "Example", label: "Example Common Name" }
@@ -41,7 +53,7 @@ var allCrabData = [
             { url : "images/crabs/Diacanthurus spinulimanus 01.jpg", "attribution" : { "name" : "Emilie & Victoria", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp135-139). NIWA" }
         ]
     },
         {
