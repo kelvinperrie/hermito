@@ -122,8 +122,8 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Carapace is orange/red. Claws and legs orange/red with white bands."},
-            { text: "Eye stalks white. Antennae and antennules pale yellow."},
+            { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
+            { text: "Eye stalks white with undertones of red. Antennae and antennules pale yellow."},
             { text: "???Outer surface of claws ????"},
             { text: "???Unsure on size"},
             { text: "???Problably on depth"},
@@ -131,7 +131,7 @@ var allCrabData = [
             { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
+            { key: "Dardanus sanguinolentus", label: "Dardanus sanguinolentus" }
         ],
         images : [
             { url : "images/crabs/Dardanus longior 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297119369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
@@ -149,16 +149,21 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
+            { text: "Eye stalks white. Antennae and antennules yellow."},
+            { text: "Outer surface of claws has bumps."},
+            { text: "???Unsure on size"},
+            { text: "???Problably on depth"},
+            { text: "???Habitat is unknown????"},
+            { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
+            { key: "Dardanus longior", label: "Dardanus longior" }
         ],
         images : [
             { url : "images/crabs/Dardanus sanguinolentus 01.jpg", "attribution" : { "name" : "Malcolm Francis", "link" : "https://inaturalist.nz/observations/252476447", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
         ]
     },
         {
@@ -171,16 +176,21 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
+            { text: "Eye stalks, antennae, and antennules are blue.", references: [1]},
+            { text: "Outer surface of claws has bumps."},
+            { text: "5.9mm to 8.9mm carapace length.", references: [1]},
+            { text: "Between 20 and 37m.", references: [1]},
+            { text: "???Habitat is unknown????"},
+            { text: "North Island, probably north of Auckland.", references: [1]}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
         ],
         images : [
             { url : "images/crabs/Paguristes barbatus 01.jpg", "attribution" : { "name" : "tangatawhenua", "link" : "https://inaturalist.nz/observations/4235848", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp59-63). NIWA" }
         ]
     },
         {
@@ -193,16 +203,20 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Carapace reddish, pink. Claws and legs alternating white and pink/red - not really in bands. Lower claws and fingers white. Darker red often at the knees."},
+            { text: "Eye stalks pinkish, can be violet below the eyes. Antennae, and antennules are yellow or light red/pink."},
+            { text: "Outer surface of claws smooth."},
+            { text: "??size"},
+            { text: "??depth"},
+            { text: "???Habitat is unknown????"},
+            { text: "Kermadec islands, probably note mainland NZ."}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
         ],
         images : [
             { url : "images/crabs/Calcinus sirius 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297120139", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
         ]
     },
         {
@@ -215,16 +229,21 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Carapace pale orange/red. Claws and legs orange-red with red stripes running up them. White knees.", references: [1]},
+            { text: "Eye stalks are orange-red with pale blue below the eye. Antennae banded in reddish-brown and white. Antennules are pale blue or mauve.", references: [1]},
+            { text: "Outer surface of claws has very small bumps."},
+            { text: "??size"},
+            { text: "??depth"},
+            { text: "Muddy bottoms.", references: [1]},
+            { text: "Found all through New Zealand.", references: [1]}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
         ],
         images : [
             { url : "images/crabs/Lophopagurus thompsoni 01.jpg", "attribution" : { "name" : "Luca Davenport-Thomas", "link" : "https://inaturalist.nz/observations/243039360", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp157-161). NIWA" }
         ]
     }
 ]
