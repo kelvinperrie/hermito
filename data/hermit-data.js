@@ -38,7 +38,7 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legshave purple vertical marks."},
+            { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legs have purple vertical marks."},
             { text: "Antennules and eye stalks red/orange, antennae striped red and white bands."},
             { text: "Claws covered in small bumps."},
             { text: "Dunno how big??????????"},
@@ -66,7 +66,13 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
+            { text: "Eye stalks white with red vertical stripe, antennae reddish brown (no bands), antennules white.", references: [1]},
+            { text: "Claws covered in small bumps."},
+            { text: "Dunno how big??????????"},
+            { text: "Most commonly found between 40 and 220m", references: [1]},
+            { text: "Habitat is ????"},
+            { text: "Found throughout New Zealand."}
         ],
         similarTo: [
             { key: "Example", label: "Example Common Name" }
@@ -75,7 +81,7 @@ var allCrabData = [
             { url : "images/crabs/Diacanthurus rubricatus 01.jpg", "attribution" : { "name" : "Shaun", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp139-142). NIWA" }
         ]
     },
         {
@@ -88,7 +94,13 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Carapace is red with hints of yellow. Claws and legs yellowish-red to violet red. Knees can be a darker red.", references: [1]},
+            { text: "Eye stalks pale pink with a pink band at midlength and pink band below the eye. Antennae and antennules reddish yellow.", references: [1]},
+            { text: "Outer surface of claws flat but with crooked lines running around them. Left claw is much larger than right."},
+            { text: "Around 24-75mm carapace length.", references: [1]},
+            { text: "Problably most commonly found between 15 to 165m.", references: [1]},
+            { text: "Habitat is unknown????"},
+            { text: "Found on both coasts around and north of Auckland.", references: [1]}
         ],
         similarTo: [
             { key: "Example", label: "Example Common Name" }
@@ -97,7 +109,7 @@ var allCrabData = [
             { url : "images/crabs/Dardanus arrosor 01.jpg", "attribution" : { "name" : "nakileigh", "link" : "https://inaturalist.nz/observations/156184588", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp81-85). NIWA" }
         ]
     },
         {
@@ -110,7 +122,13 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Example text.", references: [1]}
+            { text: "Carapace is orange/red. Claws and legs orange/red with white bands."},
+            { text: "Eye stalks white. Antennae and antennules pale yellow."},
+            { text: "???Outer surface of claws ????"},
+            { text: "???Unsure on size"},
+            { text: "???Problably on depth"},
+            { text: "???Habitat is unknown????"},
+            { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
         ],
         similarTo: [
             { key: "Example", label: "Example Common Name" }
@@ -119,7 +137,6 @@ var allCrabData = [
             { url : "images/crabs/Dardanus longior 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297119369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "EXAMPLE Morton, J., Miller, M. (1973) The New Zealand Sea Shore (pp89). Collins, London 1973" }
         ]
     },
         {
