@@ -32,6 +32,12 @@
                 return this.images[this.currentImage]
             }
 
+            this.markCompare = function() {
+                this.markForCompare = true;
+            }
+            this.removeMarkCompare = function() {
+                this.markForCompare = false;
+            }
             this.toggleMarkForCompare = function() {
                 this.markForCompare = !this.markForCompare;
             }
@@ -64,6 +70,9 @@
         function pageModel() {
             return {
 
+                sayHello() {
+                    console.log("asdf")
+                },
                 crabs : [], 
                 get markedCrabs() { 
                     return this.crabs.filter(item => item.markForCompare === true); 
@@ -71,6 +80,37 @@
                 showCompareDialog : false,
                 toggleCompareDialog() {
                     this.showCompareDialog = !this.showCompareDialog;
+                    // if we just closed the dialog then remove the ticks on the compare checkbox for all crabs i.e. reset
+                    if(!this.showCompareDialog) {
+                        this.removeAllForCompare();
+                    }
+                },
+                removeAllForCompare() {
+                    for (const crab of this.crabs) {
+                        crab.removeMarkCompare();
+                    }
+                },
+                // locates and returns a crab by the scientific name
+                findCrabByScientificName(scientificName) {
+
+                    const foundCrab = this.crabs.find((crab) => crab.scientificName == scientificName);
+                    // i am too lazy to have multiple (historic) scientific names. I will regret this.
+                    return foundCrab;
+
+                },
+                // takes an array of scientific name and marks each of them as being selected for comparrison
+                // then opens the compare dialog
+                openForCompareByScienificName(selectThese) {
+                    for(var i = 0; i < selectThese.length; i++) {
+                        var crab = this.findCrabByScientificName(selectThese[i]);
+                        // if there name is wrong (e.g. the url param gets messed up) then we might not find it I guess
+                        if(crab) {
+                            crab.markCompare();
+                        } else {
+                            console.log("dang, I couldn't find a crab with the scientific name of "+selectThese[i])
+                        }
+                    }
+                    this.showCompareDialog = true;
                 },
 
                 // properties to bind to inputs

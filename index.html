@@ -30,27 +30,31 @@
                         </span>
                     </div>
                 </div>
-                <div class="popup-content" >
+                <div class="popup-content crab-details-container">
                     <template x-for="crab in markedCrabs" :key="crab.scientificName">
                         <div class="crab-detail-container">
                             <div data-bind="" class="remove-crab-from-dialog-container"><span @click="crab.toggleMarkForCompare()" data-bind="visible: $parent.crabsForCompare().length > 1, click: function() { toggleForCompare(); }">remove this crab</span></div>
+                            <div class="scientific-name" ><span x-text="crab.scientificName"></span></div>
                             <div class="common-name" x-text="crab.commonName"></div>
-                            <div class="scientific-name" >(<span x-text="crab.scientificName"></span>)</div>
-                            <div class="crab-image-container" data-bind="with : currentImage" title="click for next image">
-                                <div class="image-count-display" title="click image to show next picture" data-bind="text: $parent.images.length, visible: $parent.images.length > 1"></div>
+                            <div class="crab-image-container" title="click for next image">
+                                <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
                                 <img class="crab-image" :src="crab.currentDisplayedImage().url" alt="crab picture" />
                                 <span class="material-icons view-image-fullsize-trigger" title="Open image as large as possible" data-bind="click : function() { $parents[1].openImageFullsize($parents[0]); }">
                                     zoom_out_map
                                 </span>
-                                <div class="previous-image-trigger" @click="crab.navigateImagePrevious()" title="click for previous image">
+                                <div class="previous-image-trigger" @click="crab.navigateImagePrevious()" title="click for previous image" x-show="crab.images.length > 1">
                                     <span class="material-icons">
                                         keyboard_arrow_left
                                     </span>
                                 </div>
-                                <div class="next-image-trigger" @click="crab.navigateImageNext()" title="click for next image">
+                                <div class="next-image-trigger" @click="crab.navigateImageNext()" title="click for next image" x-show="crab.images.length > 1">
                                     <span class="material-icons">
                                         keyboard_arrow_right
                                     </span>
+                                </div>
+                                <div class="image-attribution-container" :title="'some rights reserved: ' + crab.currentDisplayedImage().attribution.name">
+                                    <a target="_blank" :href="crab.currentDisplayedImage().attribution.licenseUrl">&copy;</a>
+                                    <a target="_blank" :href="crab.currentDisplayedImage().attribution.link" x-text="crab.currentDisplayedImage().attribution.name "></a>
                                 </div>
                             </div>
                             <div class="details-list">
@@ -59,7 +63,7 @@
                                     <template x-for="detail in crab.details" :key="detail.text">
                                         <li>
                                             <span x-text="detail.text"></span>
-                                            <sup x-show="detail.references.length > 0">
+                                            <sup x-show="detail.references && detail.references.length > 0">
                                                 <template x-for="reference in detail.references" :key="reference">
                                                     <span x-text="reference"></span>
                                                 </template>
@@ -72,7 +76,7 @@
                                 Simlar crabs:
                                 <ul>
                                     <template x-for="similar in crab.similarTo" :key="similar.key">
-                                        <li><span x-text="similar.label"></span><span class="details-compare-link" data-bind="click: function() { $parents[1].openForCompareByKey(key) }">compare</span></li>
+                                        <li><span x-text="similar.label"></span><span class="details-compare-link" @click="openForCompareByScienificName([similar.key])">compare</span></li>
                                     </template>
                                     <li x-show="crab.similarTo.length === 0">none</li>
                                 </ul>
@@ -109,16 +113,21 @@
                         <span x-text="crab.commonName"></span>
                     </div>
                     <div class="crab-image-container">
+                        <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
                         <img class="crab-image" alt="hermit crab image" :src="crab.currentDisplayedImage().url" />
-                        <div class="next-image-trigger" title="click for next image" @click="crab.navigateImageNext()">
+                        <div class="next-image-trigger" title="click for next image" @click="crab.navigateImageNext()" x-show="crab.images.length > 1">
                             <span class="material-icons">
                                 keyboard_arrow_right
                             </span>
                         </div>
-                        <div class="previous-image-trigger" title="click for previous image" @click="crab.navigateImagePrevious()">
+                        <div class="previous-image-trigger" title="click for previous image" @click="crab.navigateImagePrevious()" x-show="crab.images.length > 1">
                             <span class="material-icons">
                                 keyboard_arrow_left
                             </span>
+                        </div>
+                        <div class="image-attribution-container" :title="'some rights reserved: ' + crab.currentDisplayedImage().attribution.name">
+                            <a target="_blank" :href="crab.currentDisplayedImage().attribution.licenseUrl">&copy;</a>
+                            <a target="_blank" :href="crab.currentDisplayedImage().attribution.link" x-text="crab.currentDisplayedImage().attribution.name "></a>
                         </div>
                     </div>
                     <!-- <span x-text="crab.currentDisplayedImage().url"></span><br/> -->
@@ -138,7 +147,7 @@
                                 <span x-show="crab.markForCompare" class="material-icons">check_box</span>
                                 <span x-show="!crab.markForCompare" class="material-icons">check_box_outline_blank</span>
                             </div>
-                            <div class="crab-link"  @click="toggleCompareDialog()" title="open the details of this and any other selected crab">
+                            <div class="crab-link"  @click="crab.markCompare();toggleCompareDialog()" title="open the details of this and any other selected crab">
                                 <span class="material-icons">zoom_in</span>
                             </div>
                         </div>

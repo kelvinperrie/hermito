@@ -3,13 +3,16 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
+
+/* styles relating to the crab tiles */
 .crab-tile-container {
     display: flex;
     flex-wrap: wrap;
+    font-size: 0.8em;
 }
 .crab-tile {
     width: 200px;
-    height: 200px;
+    height: 210px;
     margin: 1em;
     border: 3px #3F51B5 solid;
     border-radius: 10px;
@@ -19,6 +22,11 @@ body {
     -moz-box-shadow:    5px 5px 4px 0px #888;
     -webkit-box-shadow: 5px 5px 4px 0px #888;
     box-shadow:         5px 5px 4px 0px #888;
+}
+.crab-title {
+    font-size: 1.2em;
+    /* some of the crabbies don't have common names, so we're going to lazily force the height on this */
+    height: 36px;
 }
 .crab-tile .crab-image {
     max-width: 200px;
@@ -38,21 +46,22 @@ body {
     user-select: none;
     display: none;
 }
-.crab-image-container:hover .previous-image-trigger, .crab-image-container:hover .next-image-trigger {
-    display: block;
-}
-.next-image-trigger .material-icons, .previous-image-trigger .material-icons{
-    font-size: 4em;
-    cursor: pointer;
-}
-.crab-image-container {
+
+
+.crab-image-container{
+    height: 140px;
+    text-align: center;
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #626262;
 }
 
 .crab-links {
     margin-top: 5px;
     cursor: pointer;
     position: relative;
+    color: #343434;
 }
 .crab-links-right {
     position: absolute;
@@ -60,7 +69,7 @@ body {
     top: 0;
 }
 .crab-links a:link, .crab-links a:visited, .crab-links a:active {
-    color: #37B;
+    color: #343434;
 }
 .crab-links a:hover {
     color: #534;
@@ -72,15 +81,53 @@ body {
     display: inline-block;
 }
 
-
-
-.details-popup-container {
-    position: absolute;
-    z-index: 100;
+.crab-image {
     max-width: 100%;
-    left: calc(50% - 100vw);
-    transform: translate(-50%, 0) translate(100vw, 0);
+    max-height: 100%;
 }
+.image-count-display {
+    position: absolute;
+    right: 0px;
+    background-color: #36453B;
+    color: #ebebeb;
+    padding: 0 4px;
+    opacity: 0.7;
+    z-index: 10;
+}
+.crab-image-container:hover .previous-image-trigger, .crab-image-container:hover .next-image-trigger {
+    display: block;
+}
+.previous-image-trigger, .next-image-trigger {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    height: 80px;
+    padding-top: 60px;
+    z-index: 5;
+    opacity: 0.6;
+    user-select: none;
+}
+
+.previous-image-trigger {
+    left: 0px;
+}
+.next-image-trigger {
+    right: 0px;
+}
+.image-attribution-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff82;
+    padding: 0 3px;
+}
+.image-attribution-container a:link, .image-attribution-container a:visited, .image-attribution-container a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+/* general popup styles - either the compare dialog or the large image popup */
 .popup {
     background-color: #EEE2DC;
     -moz-box-shadow:    5px 5px 4px 0px #888;
@@ -93,10 +140,10 @@ body {
 }
 .popup-banner {
     position: relative;
-    background-color: #840027;
+    background-color: #0251a0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    height: 2em;
+    height: 1.5em;
     font-size: 1.2em;
     padding: 5px 20px;
     color: #fff;
@@ -122,26 +169,19 @@ body {
     /* font-size: 1.2em; */
     color: #ebebeb;
 }
-.crab-image {
+
+
+
+
+/* compare dialog popup styles - called the details popup */
+.details-popup-container {
+    position: absolute;
+    z-index: 100;
     max-width: 100%;
-    max-height: 100%;
+    left: calc(50% - 100vw);
+    transform: translate(-50%, 0) translate(100vw, 0);
 }
-.crab-detail-container {
-    display: inline-block;
-    /* border: 1px solid #36453B; */
-    border-radius: 0.3em;
-    padding: 5px;
-    margin: 3px;
-    background-color: #FFF4E8;
-    position: relative;
-    width: 400px;
-    font-size: 0.8em;
-    vertical-align: top;
-    white-space: normal;
-}
-.crab-detail-container .crab-image-container {
-    height: 300px;
-}
+
 .remove-crab-from-dialog-container {
     position: relative;
     font-size: 0.8em;
@@ -153,11 +193,39 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* crab details within the popup */
+
+.crab-details-container {
+    display: flex;
+}
+
+.crab-detail-container {
+    /* display: inline-block; */
+    /* border: 1px solid #36453B; */
+    border-radius: 0.3em;
+    padding: 5px;
+    margin: 3px;
+    background-color: #FFF4E8;
+    position: relative;
+    width: 400px;
+    font-size: 0.8em;
+    vertical-align: top;
+    white-space: normal;
+}
+.crab-detail-container .previous-image-trigger, .crab-detail-container .next-image-trigger {
+    padding-top: 140px;
+    width: 30px;
+}
+.crab-detail-container .crab-image-container {
+    height: 300px;
+}
+
 .crab-detail-container .common-name {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .crab-detail-container .scientific-name {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 .references {
     font-size: 0.8em;
@@ -175,3 +243,27 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+.view-image-fullsize-trigger {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 10;
+}
+.view-image-fullsize-trigger:hover {
+    color: #534;
+}
+
+/* styles for the large image popup */
+.fullsize-image-popup-container {
+    position: absolute;
+    z-index: 200;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 100%;
+}
+.fullsize-image-container {
+    position: relative;
+}
+
