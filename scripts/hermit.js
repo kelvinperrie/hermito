@@ -90,6 +90,13 @@
                         crab.removeMarkCompare();
                     }
                 },
+                // checks to see if any crabs are selected, and if not closes the compare window - called after removing a single crab from the compare window
+                closeCompareIfNoCrabsSelected() {
+                    const compareCount = this.crabs.filter(item => item.markForCompare).length;
+                    if(compareCount === 0) {
+                        this.showCompareDialog = false;
+                    }
+                },
                 // locates and returns a crab by the scientific name
                 findCrabByScientificName(scientificName) {
 
@@ -113,27 +120,10 @@
                     this.showCompareDialog = true;
                 },
 
-                // properties to bind to inputs
-                newPokemonName : '',
-                newPokemonType : '',
-
-                // methods can be called on click
-                // addNewPokemon() {
-                //     this.pokemon.push({ name : this.newPokemonName, type : this.newPokemonType })
-                //     this.newPokemonName = '';
-                //     this.newPokemonType = '';
-                // },
-
-                // deletePokemon(name) {
-                //     this.pokemon = this.pokemon.filter(function( item ) {
-                //         return item.name !== name;
-                //     });
-                // },
                 init() {
                     for (let crabData of allCrabData) {
                         var crabModel = new CrabModel(crabData);
                         this.crabs.push(crabModel);
-                        //console.log(this.crabs)
                     }
                 }
             }

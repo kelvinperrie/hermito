@@ -33,7 +33,7 @@
                 <div class="popup-content crab-details-container">
                     <template x-for="crab in markedCrabs" :key="crab.scientificName">
                         <div class="crab-detail-container">
-                            <div data-bind="" class="remove-crab-from-dialog-container"><span @click="crab.toggleMarkForCompare()" data-bind="visible: $parent.crabsForCompare().length > 1, click: function() { toggleForCompare(); }">remove this crab</span></div>
+                            <div data-bind="" class="remove-crab-from-dialog-container"><span @click="crab.toggleMarkForCompare(); closeCompareIfNoCrabsSelected();" data-bind="visible: $parent.crabsForCompare().length > 1, click: function() { toggleForCompare(); }">remove this crab</span></div>
                             <div class="scientific-name" ><span x-text="crab.scientificName"></span></div>
                             <div class="common-name" x-text="crab.commonName"></div>
                             <div class="crab-image-container" title="click for next image">
