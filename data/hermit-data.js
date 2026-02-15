@@ -78,7 +78,7 @@ var allCrabData = [
             { key: "Example", label: "Example Common Name" }
         ],
         images : [
-            { url : "images/crabs/Diacanthurus rubricatus 01.jpg", "attribution" : { "name" : "Shaun", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+            { url : "images/crabs/Diacanthurus rubricatus 01.jpg", "attribution" : { "name" : "Shaun", "link" : "https://inaturalist.nz/observations/24495318", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp139-142). NIWA" }
@@ -238,12 +238,125 @@ var allCrabData = [
             { text: "Found all through New Zealand.", references: [1]}
         ],
         similarTo: [
+            { key: "Lophopagurus foresti", label: "Lophopagurus foresti" }
         ],
         images : [
             { url : "images/crabs/Lophopagurus thompsoni 01.jpg", "attribution" : { "name" : "Luca Davenport-Thomas", "link" : "https://inaturalist.nz/observations/243039360", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp157-161). NIWA" }
+        ]
+    },
+        {
+        commonName : "",
+        scientificName : "Lophopagurus pumilus",
+        aka : [],
+        memoirNiwaPage : 150,
+        inaturalistLink: "https://inaturalist.nz/taxa/1071800-Lophopagurus-pumilus",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main body is brownish with greenish claws that have white marking towards tips. Legs are banded in maroon/brown and white stripes.", references: [1]},
+            { text: "Eye stalks are white and greenish, appearing mottled. Antennae are maroon with small white bands. Antennules are yellow-orange.", references: [1]},
+            { text: "Outer surface of claws has scattered small bumps."},
+            { text: "??size"},
+            { text: "From 20m to 120m", references: [1]},
+            { text: "Sand, muddy sand, gravel.", references: [1]},
+            { text: "A bit unclear where found - probably most of the North Island and top and eastern part of the South Island.", references: [1]},
+            { text: "??something on how to distinguish from Pagurus traversi"},
+        ],
+        similarTo: [
+            { key: "Pagurus traversi", label: "Pagurus traversi" }
+        ],
+        images : [
+            { url : "images/crabs/Lophopagurus pumilus 01.jpg", "attribution" : { "name" : "Emily Roberts", "link" : "https://inaturalist.nz/observations/212162737", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp150-153). NIWA" }
+        ]
+    },
+        {
+        commonName : "",
+        scientificName : "Lophopagurus foresti",
+        aka : [],
+        memoirNiwaPage : 161,
+        inaturalistLink: "https://inaturalist.nz/taxa/1144069-Lophopagurus-foresti",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},
+            { text: "Eye stalks are ??????. Antennae are banded in reddish-brown and white. Antennules are mauve.", references: [1]},
+            { text: "Outer surface of right claw has small bumps; left has less bumps. Claws have a ridge running down them", references: [1]},
+            { text: "??size"},
+            { text: "Intertidal to 220m", references: [1]},
+            { text: "Gravel or mud.", references: [1]},
+            { text: "Probably most of mainland New Zealand.", references: [1]},
+            { text: "??how to distinguish from Lophopagurus thompsoni"},
+        ],
+        similarTo: [
+            { key: "Lophopagurus thompsoni", label: "Lophopagurus thompsoni" }
+        ],
+        images : [
+            { url : "images/noimage.jpg", "attribution" : { "name" : "None", "link" : "", "licenseUrl" : "" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp161-163). NIWA" }
+        ]
+    },
+        {
+        commonName : "",
+        scientificName : "Lophopagurus triserratus",
+        aka : [],
+        memoirNiwaPage : 161,
+        inaturalistLink: "https://inaturalist.nz/taxa/1470930-Lophopagurus-triserratus",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour of body and legs is a light reddish brown. Legs have white around the knees; can appare to be red &amp; white bands.", references: [1]},
+            { text: "Eye stalks are ??????. Antennae are banded in reddish-brown and white. Antennules have very little colour; transparent / light red.", references: [1]},
+            { text: "Outer surface of claw is smooth, may have a line of small bump through the middle", references: [1]},
+            { text: "??size"},
+            { text: "60 to 400m", references: [1]},
+            { text: "Often found in tubes attached to rocks, originally made by worms (so can't move around).", references: [1]},
+            { text: "All of New Zealand.", references: [1]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Lophopagurus triserratus 01.jpg", "attribution" : { "name" : "Luca Davenport-Thomas", "link" : "https://inaturalist.nz/observations/283825278", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp177-179). NIWA" }
+        ]
+    },
+        {
+        commonName : "",
+        scientificName : "Lophopagurus laurentae",
+        aka : [],
+        memoirNiwaPage : 169,
+        inaturalistLink: "https://inaturalist.nz/taxa/1096600-Lophopagurus-laurentae",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour of body and legs is a smoky mauve/purple."},
+            { text: "Eye stalks are pale brown. Antennae are purple-brown with narrow white bands. Antennules are pale brown.", references: [1]},
+            { text: "Outer surface of claw is mostly smooth, made up of tiny bumps, almost appearing scaly."},
+            { text: "??size"},
+            { text: "Mostly between 25 and 60m", references: [1]},
+            { text: "Probably sandy."},
+            { text: "Western and eastern New Zealand.", references: [1]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Lophopagurus laurentae 01.jpg", "attribution" : { "name" : "Francesco Martoni", "link" : "https://inaturalist.nz/observations/260780980", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp169-171). NIWA" }
         ]
     }
 ]
