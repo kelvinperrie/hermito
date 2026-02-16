@@ -89,11 +89,13 @@ header {
 
 .crab-image-container{
     height: 185px;
-    text-align: center;
     position: relative;
     cursor: pointer;
     overflow: hidden;
     background-color: #626262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .crab-links {
