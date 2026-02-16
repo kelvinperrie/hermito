@@ -18,7 +18,6 @@ var allCrabData = [
             { text: "Found throughout New Zealand."}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
         ],
         images : [
             { url : "images/crabs/Areopaguristes setosus 01.jpg", "attribution" : { "name" : "lcolmer", "link" : "https://inaturalist.nz/observations/62745403", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
@@ -47,7 +46,7 @@ var allCrabData = [
             { text: "Found throughout New Zealand."}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
+            { key: "Pagurus novizealandiae", label: "Pagurus novizealandiae" }
         ],
         images : [
             { url : "images/crabs/Diacanthurus spinulimanus 01.jpg", "attribution" : { "name" : "Emilie & Victoria", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
@@ -75,7 +74,6 @@ var allCrabData = [
             { text: "Found throughout New Zealand."}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
         ],
         images : [
             { url : "images/crabs/Diacanthurus rubricatus 01.jpg", "attribution" : { "name" : "Shaun", "link" : "https://inaturalist.nz/observations/24495318", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
@@ -103,7 +101,6 @@ var allCrabData = [
             { text: "Found on both coasts around and north of Auckland.", references: [1]}
         ],
         similarTo: [
-            { key: "Example", label: "Example Common Name" }
         ],
         images : [
             { url : "images/crabs/Dardanus arrosor 01.jpg", "attribution" : { "name" : "nakileigh", "link" : "https://inaturalist.nz/observations/156184588", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
@@ -299,7 +296,7 @@ var allCrabData = [
             { key: "Lophopagurus thompsoni", label: "Lophopagurus thompsoni" }
         ],
         images : [
-            { url : "images/noimage.jpg", "attribution" : { "name" : "None", "link" : "", "licenseUrl" : "" } }
+            { url : "images/noimage.png", "attribution" : { "name" : "None", "link" : "", "licenseUrl" : "" } }
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp161-163). NIWA" }
@@ -357,6 +354,35 @@ var allCrabData = [
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp169-171). NIWA" }
+        ]
+    },
+        {
+        commonName : "New Zealand Hermit Crab",
+        scientificName : "Pagurus novizealandiae",
+        aka : [],
+        memoirNiwaPage : 196,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour of body and legs is a pale green (maybe slightly bluish). <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
+            { text: "Eye stalks are pale bluish-green. Antennae are yellow/green with tiny black stripes (stripes may not be very visible). Antennae on younger crabs are green and white banded. Antennules are pale pale bluish green.", references: [1]},
+            { text: "Outer surface of claw has rows of (often bluish) bumps."},
+            { text: "??size"},
+            { text: "Intertidal.", references: [1]},
+            { text: "Under and around rocks."},
+            { text: "Common around all of New Zealand.", references: [1]}
+        ],
+        similarTo: [
+            { key: "Diacanthurus spinulimanus", label: "Diacanthurus spinulimanus" }
+        ],
+        images : [
+            { url : "images/crabs/Pagurus novizealandiae 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/152989534", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurus novizealandiae 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" }
         ]
     }
 ]

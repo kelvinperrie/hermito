@@ -13,7 +13,17 @@
     <script>
     </script>
 
-    <!-- bind the page model - can't do this on a template element -->
+    <header class="row">
+        <div class="logo-container">
+            <img class="logo" src="images/logo.svg" alt="page logo">
+        </div>
+        <div class="col">
+            <h1>NZ Hermit Crab Guide</h1>
+            <div class="header-tag-line">Use this guide to help with identification of New Zealand hermit crabs (if you want)</div>
+            
+        </div>
+    </header>
+
     <div x-data="pageModel" x-init="console.log('pagemode init')">
         <div class="details-popup-container" x-show="showCompareDialog">
             <div class="popup">
@@ -62,7 +72,7 @@
                                 <ul>
                                     <template x-for="detail in crab.details" :key="detail.text">
                                         <li>
-                                            <span x-text="detail.text"></span>
+                                            <span x-html="detail.text"></span>
                                             <sup x-show="detail.references && detail.references.length > 0">
                                                 <template x-for="reference in detail.references" :key="reference">
                                                     <span x-text="reference"></span>
@@ -103,6 +113,7 @@
                 </div>
             </div>
         </div>
+        [in theory I'm going to put some filters here]<br/>
         Your crabbies are:<br/>
         <div class="crab-tile-container">
             <!-- x-for must be on a template item? keys are important if reordering? -->
@@ -156,7 +167,22 @@
             </template>
         </div>
     </div>
+    <footer class="row">
+        <div class="col">
+            <div class="info-link-button">
+                <a href="https://github.com/kelvinperrie/hermito" target="_blank">
+                    <img src="images/GitHub-Mark-32px.png" alt="github repo link" />
+                    See repository on GitHub
+                </a>
+            </div>
+            Sources: 
+            <ul>
+                <li>iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026.</li>
+                <li>J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae. NIWA</li>
+                <li>Wikipedia. Available from https://en.wikipedia.org, Wikimedia Foundation. Accessed 15/02/2026.</li>
+            </ul>
+        </div>
+    </footer>
     <script src="scripts/hermit.js"></script>
-
 </body>
 </html>
