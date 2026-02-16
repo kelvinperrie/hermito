@@ -442,5 +442,34 @@ var allCrabData = [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp199-206). NIWA" },
             { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
         ]
+    },
+        {
+        commonName : "",
+        scientificName : "Pagurixus hectori",
+        aka : [],
+        memoirNiwaPage : 184,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour of body and claws is a deep brown-red. Claw fingers tend to white. Legs are loosely banded in brown, orange, and white.", references: [2]},
+            { text: "Eye stalks are brown with white bands or markings. Antennae are brown with narrow white bands. Antennules are orange/red.", references: [2]},
+            { text: "<b>Outer surface of claws are smooth.</b>"},
+            { text: "??size"},
+            { text: "Intertidal.", references: [1]},
+            { text: "Rockpools and under rocks."},
+            { text: "Probably most of New Zealand.", references: [2]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Pagurixus hectori 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/196005149", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurixus hectori 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/92721199", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp184-187). NIWA" },
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
+        ]
     }
 ]

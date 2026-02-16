@@ -19,6 +19,13 @@ header {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+.logo {
+    width: 160px;
+    padding-top: 20px;
+}
+.header-text-container {
+    padding: 0 1em;
+}
 
 /* styles relating to the crab tiles */
 .crab-tile-container {
@@ -27,8 +34,8 @@ header {
     font-size: 0.8em;
 }
 .crab-tile {
-    width: 200px;
-    height: 210px;
+    width: 250px;
+    height: 260px;
     margin: .75em;;
     /* border: 3px #0251a0 solid; */
     border-radius: 10px;
@@ -58,8 +65,8 @@ header {
 
 }
 .crab-tile .crab-image {
-    max-width: 200px;
-    max-height: 150px;
+    max-width: 250px;
+    max-height: 190px;
 }
 .-image-trigger {
     position: absolute;
@@ -81,7 +88,7 @@ header {
 
 
 .crab-image-container{
-    height: 140px;
+    height: 185px;
     text-align: center;
     position: relative;
     cursor: pointer;
