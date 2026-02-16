@@ -120,8 +120,8 @@
             <template x-for="crab in crabs" :key="crab.scientificName">
                 <div class="crab-tile">
                     <div class="crab-title">
-                        <span x-text="crab.scientificName"></span><br/>
-                        <span x-text="crab.commonName"></span>
+                        <div class="crab-scientific-name" x-text="crab.scientificName"></div>
+                        <div class="crab-common-name"x-text="crab.commonName"></div>
                     </div>
                     <div class="crab-image-container">
                         <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>

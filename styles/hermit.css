@@ -18,8 +18,6 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 /* styles relating to the crab tiles */
@@ -47,14 +45,23 @@ header {
     height: 36px;
     background-color: #03295e;
     color: #fff;
-    padding: 2px .25em;
     margin-bottom: 2px;
+    padding: 2px 0;
+}
+.crab-scientific-name {
+    padding: 0 0.25em;
+    padding-bottom: 2px;
+}
+.crab-common-name {
+    padding: 0 0.25em;
+    background-color: #06459d;
+
 }
 .crab-tile .crab-image {
     max-width: 200px;
     max-height: 150px;
 }
-.next-image-trigger {
+.-image-trigger {
     position: absolute;
     right: -10;
     top: 50px;
@@ -67,6 +74,9 @@ header {
     top: 50px;
     user-select: none;
     display: none;
+}
+.crab-detail-container .next-image-trigger, .crab-detail-container .previous-image-trigger {
+    height: 160px;
 }
 
 

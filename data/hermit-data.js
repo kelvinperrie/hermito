@@ -366,8 +366,8 @@ var allCrabData = [
             { key: "example" , values : ["square","round"] }
         ],
         details : [
-            { text: "Main colour of body and legs is a pale green (maybe slightly bluish). <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
-            { text: "Eye stalks are pale bluish-green. Antennae are yellow/green with tiny black stripes (stripes may not be very visible). Antennae on younger crabs are green and white banded. Antennules are pale pale bluish green.", references: [1]},
+            { text: "Main colour of body and legs is a pale green (maybe slightly bluish). Young crabs can have green and white banded legs. <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
+            { text: "Eye stalks are pale bluish-green. Antennae are yellow/green with tiny black stripes (stripes may not be very visible). Antennae on younger crabs are green and white banded. Antennules are pale bluish green.", references: [1]},
             { text: "Outer surface of claw has rows of (often bluish) bumps."},
             { text: "??size"},
             { text: "Intertidal.", references: [1]},
@@ -375,7 +375,7 @@ var allCrabData = [
             { text: "Common around all of New Zealand.", references: [1]}
         ],
         similarTo: [
-            { key: "Diacanthurus spinulimanus", label: "Diacanthurus spinulimanus" }
+            { key: "Diacanthurus spinulimanus", label: "Diacanthurus spinulimanus ??? NIWA says this - they don't look alike to me???" }
         ],
         images : [
             { url : "images/crabs/Pagurus novizealandiae 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/152989534", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
@@ -383,6 +383,64 @@ var allCrabData = [
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" }
+        ]
+    },
+        {
+        commonName : "",
+        scientificName : "Pagurus traversi",
+        aka : [],
+        memoirNiwaPage : 206,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour of body and legs is a pale blue-green. Legs and knees may have pale blue patches.", references: [1]},
+            { text: "Eye stalks are green-blue. Antennae are dark red with narrow white bands. Antennules are reddish orange.", references: [1]},
+            { text: "Outer surface of claw covered in small spikes.", references: [1]},
+            { text: "??size"},
+            { text: "Intertidal to 15m.", references: [1]},
+            { text: "On seaweeds and under rocks.", references: [1]},
+            { text: "All of New Zealand.", references: [2]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Pagurus traversi 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/189440124", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurus traversi 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/261094117", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp206-209). NIWA" },
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
+        ]
+    },
+        {
+        commonName : "",
+        scientificName : "Pagurus albidianthus",
+        aka : [],
+        memoirNiwaPage : 199,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        attributes : [
+            { key: "example" , values : ["square","round"] }
+        ],
+        details : [
+            { text: "Main colour of body and legs can range from a fadded pink to a plum colour. Smaller crabs can be mostly white. Knees have white bands and can orange patches.", references: [1, 2]},
+            { text: "Eye stalks are light brown or reddish. Antennae are light brown with narrow white bands. Antennules are light brown or reddish.", references: [1]},
+            { text: "Outer surface of claw probably appear smooth, but actually covered in small/subtle bumps.", references: [1]},
+            { text: "??size"},
+            { text: "Probably intertidalish / close to the beach.", references: [1]},
+            { text: "Mainly on sand.", references: [1]},
+            { text: "Probably all of New Zealand.", references: [2]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Pagurus albidianthus 01.jpg", "attribution" : { "name" : "Zachary Robertson", "link" : "https://inaturalist.nz/observations/270599369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
+            { url : "images/crabs/Pagurus albidianthus 02.jpg", "attribution" : { "name" : "Evelyn Virens", "link" : "https://inaturalist.nz/observations/40682385", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp199-206). NIWA" },
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
         ]
     }
 ]
