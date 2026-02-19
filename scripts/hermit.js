@@ -1,6 +1,5 @@
         
 function FilterValueModel(filterValue) {
-    var self = this;
 
     this.text = filterValue.text;
     this.key = filterValue.key;
@@ -8,18 +7,13 @@ function FilterValueModel(filterValue) {
     this.activated = filterValue.default === true;
 
     this.toggleActivated = function() {
-        console.log("clicked")
         this.activated = !this.activated;
     }
 }
 
 function FilterModel(filter, pageModel) {
-    var self = this;
 
-    //self.pageModel = pageModel; // let's loop that puppy
-    // self.visible = ko.observable(false);        // is this filter visible
     this.key = filter.key;                      // the key for the filter e.g. carapaceShape
-    //self.visibleWhen = filter.visibleWhen;      // an object the constraints that make this filter visible (i.e. if another filter has to have something selected for this one to show)
     this.possibleValues = [];                   // an array of filterValueModels which describe the options that can be selected for the filter
     for(var i = 0; i < filter.possibleValues.length; i++) {
         this.possibleValues.push(new FilterValueModel(filter.possibleValues[i]));
@@ -27,69 +21,64 @@ function FilterModel(filter, pageModel) {
     this.question = filter.question;            // the question for the filter e.g. "What shape is the shell of the crab"
     this.helpText = filter.helpText;            // some text that expands on the filter's question
     this.showHelpText = false;    // whether the help text is shown for this question
-    //self.ignored = ko.observable(false);        // if the user has selected to ignore this question
-
-    // self.classes = ko.computed(function() {
-    //     return self.ignored() ? "filter filter-ignored" : "filter";
-    // });
 
     // check to see if there are any activated values on this filter (i.e. something is selected on the filter)
-    this.hasAnyValueActivated = function() {
-        for(var i = 0; i < this.possibleValues.length; i++) {
-            if(this.possibleValues[i].activated === true) {
-                return true;
-            }
-        }
-        return false;
-    }
+    // this.hasAnyValueActivated = function() {
+    //     for(var i = 0; i < this.possibleValues.length; i++) {
+    //         if(this.possibleValues[i].activated === true) {
+    //             return true;
+    //         }
+    //     }
+    //     return false;
+    // }
 
     // check to see if a particular value has been activated
-    self.checkValueIsActivated = function(value) {
-        for(var i = 0; i < self.possibleValues.length; i++) {
-            if(self.possibleValues[i].key === value) {
-                return self.possibleValues[i].activated();
-            }
-        }
-        return false;
-    }
+    // self.checkValueIsActivated = function(value) {
+    //     for(var i = 0; i < self.possibleValues.length; i++) {
+    //         if(self.possibleValues[i].key === value) {
+    //             return self.possibleValues[i].activated();
+    //         }
+    //     }
+    //     return false;
+    // }
 
     // get an array of all the values for the activated filter options (i.e. all the selected values)
-    self.getActiveValues = function() {
-        var activeValues = [];
-        for(var i = 0; i < self.possibleValues.length; i++) {
-            if(self.possibleValues[i].activated()) {
-                activeValues.push(self.possibleValues[i].key);
-            }
-        }
-        return activeValues;
-    }
+    // self.getActiveValues = function() {
+    //     var activeValues = [];
+    //     for(var i = 0; i < self.possibleValues.length; i++) {
+    //         if(self.possibleValues[i].activated()) {
+    //             activeValues.push(self.possibleValues[i].key);
+    //         }
+    //     }
+    //     return activeValues;
+    // }
 
     // set the visibility of the filter, return whether we had to deactive some filter options
-    self.setVisibility = function(visibility) {
-        self.visible(visibility);
-        // if we're making this filter not visible then we need to clear it so it isn't actively effecting our results list
-        if(!visibility) {
-            return self.deactiveFilterValues();
-        } else {
-            return false;
-        }
-    };
+    // self.setVisibility = function(visibility) {
+    //     self.visible(visibility);
+    //     // if we're making this filter not visible then we need to clear it so it isn't actively effecting our results list
+    //     if(!visibility) {
+    //         return self.deactiveFilterValues();
+    //     } else {
+    //         return false;
+    //     }
+    // };
 
     // deactive any set values on this filter, return a value indicating if we turned some stuff off
-    self.deactiveFilterValues = function() {
-        var activatedFilterChange = false;
-        for(var i = 0; i < self.possibleValues.length; i++) {
-            if(self.possibleValues[i].activated()) {
-                activatedFilterChange = true;
-            }
-            self.possibleValues[i].activated(false);
-        }
-        return activatedFilterChange;
-    };
-    // check to see if this filter should be visible
-    self.checkVisibility = function() {
+    // self.deactiveFilterValues = function() {
+    //     var activatedFilterChange = false;
+    //     for(var i = 0; i < self.possibleValues.length; i++) {
+    //         if(self.possibleValues[i].activated()) {
+    //             activatedFilterChange = true;
+    //         }
+    //         self.possibleValues[i].activated(false);
+    //     }
+    //     return activatedFilterChange;
+    // };
+    // // check to see if this filter should be visible
+    // self.checkVisibility = function() {
 
-    }
+    // }
 }
         
 function AttributionModel(attributionData) {
@@ -136,21 +125,28 @@ function CrabModel(crabData) {
     this.toggleMarkForCompare = function() {
         this.markForCompare = !this.markForCompare;
     }
-    this.matchesAtLeastOneFilter = function(activeFilters) {
+    this.matchesAllActiveFilters = function(activeFilters) {
         // for each filter with an item active, see if this crab matches one of the items
         for (const filter of activeFilters) {
+            let activeCount = 0;
+            let matchesFilter = false;
             for(var i = 0; i < filter.possibleValues.length; i++) {
                 if(filter.possibleValues[i].activated === true) {
+                    activeCount = activeCount + 1;
                     // does our crab have a match?
                     let crabAttribute = this.getAttributeByKey(filter.key);
                     if(crabAttribute && crabAttribute.values.includes(filter.possibleValues[i].key)) {
-                        return true;
+                        matchesFilter = true;
+                        break;
                     }
                 }
             }
-            
+            // if there was an active value in the filter and we didn't a match then we want to exclude this crab
+            if(activeCount > 0 && !matchesFilter) {
+                return false;
+            }
         }
-        return false;
+        return true;
     }
 
     this.getAttributeByKey = function(key) {
@@ -185,29 +181,16 @@ function CrabModel(crabData) {
 
 function pageModel() {
     return {
-
-        sayHello() {
-            console.log("asdf")
-        },
-        crabs : [], 
-        filters : [], 
+        crabs : [],     // the primary list of crabs
+        filters : [],   // the collection of potential filters
+        // provides a filtered list of crabs, based on selections made to the filters
         get filteredCrabs() {
             return this.crabs.filter(
-                crab => crab.matchesAtLeastOneFilter(this.filters)
+                crab => crab.matchesAllActiveFilters(this.filters)
             )
-
-            const activeFilters = this.filters.filter(filter => filter.activated);
-            const filtered = this.crabs.filter(crab =>
-                this.crabMatchesFilter(crab, activeFilters)
-            );
-            console.log(filtered);
-            return filtered;
         },
         get markedCrabs() { 
             return this.crabs.filter(item => item.markForCompare === true); 
-        },
-        crabMatchesFilter(crab, activeFilters) {
-            return true;
         },
         showCompareDialog : false,
         toggleCompareDialog() {

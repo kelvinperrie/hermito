@@ -364,6 +364,9 @@ footer {
     padding: 5px;
     background-color: #C5C6C7;
     cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-size: .8em;
 }
 
 .selected-filter-value {

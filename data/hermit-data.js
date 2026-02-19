@@ -6,7 +6,8 @@ var allCrabData = [
         memoirNiwaPage : 73,
         inaturalistLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["transparent", "white", "green"] }
         ],
         details : [
             { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
@@ -21,7 +22,6 @@ var allCrabData = [
         ],
         images : [
             { url : "images/crabs/Areopaguristes setosus 01.jpg", "attribution" : { "name" : "lcolmer", "link" : "https://inaturalist.nz/observations/62745403", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
-            { url : "images/crabs/Diacanthurus spinulimanus 01.jpg", "attribution" : { "name" : "Emilie & Victoria", "link" : "https://inaturalist.nz/observations/149610051", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp73-78). NIWA" }
@@ -34,7 +34,8 @@ var allCrabData = [
         memoirNiwaPage : 135,
         inaturalistLink: "https://inaturalist.nz/taxa/497510-Diacanthurus-spinulimanus",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["red", "orange"] }
         ],
         details : [
             { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legs have purple vertical marks."},
@@ -62,7 +63,8 @@ var allCrabData = [
         memoirNiwaPage : 139,
         inaturalistLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["white"] }
         ],
         details : [
             { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
@@ -89,7 +91,8 @@ var allCrabData = [
         memoirNiwaPage : 81,
         inaturalistLink: "https://inaturalist.nz/taxa/466901-Dardanus-arrosor",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["red", "yellow"] }
         ],
         details : [
             { text: "Carapace is red with hints of yellow. Claws and legs yellowish-red to violet red. Knees can be a darker red.", references: [1]},
@@ -116,7 +119,8 @@ var allCrabData = [
         memoirNiwaPage : null,
         inaturalistLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
         attributes : [
-            { key: "geographicLocation" , values : ["kermadec"] }
+            { key: "geographicLocation" , values : ["kermadec"] },
+            { key: "antennulesColour" , values : ["yellow"] }
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
@@ -143,7 +147,8 @@ var allCrabData = [
         memoirNiwaPage : null,
         inaturalistLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
         attributes : [
-            { key: "geographicLocation" , values : ["kermadec"] }
+            { key: "geographicLocation" , values : ["kermadec"] },
+            { key: "antennulesColour" , values : ["yellow"] }
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
@@ -170,7 +175,8 @@ var allCrabData = [
         memoirNiwaPage : 59,
         inaturalistLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["blue"] }
         ],
         details : [
             { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
@@ -197,7 +203,8 @@ var allCrabData = [
         memoirNiwaPage : null,
         inaturalistLink: "https://inaturalist.nz/taxa/1080999-Calcinus-sirius",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["kermadec"] },
+            { key: "antennulesColour" , values : ["yellow", "red", "pink"] }
         ],
         details : [
             { text: "Carapace reddish, pink. Claws and legs alternating white and pink/red - not really in bands. Lower claws and fingers white. Darker red often at the knees."},
@@ -206,7 +213,7 @@ var allCrabData = [
             { text: "??size"},
             { text: "??depth"},
             { text: "???Habitat is unknown????"},
-            { text: "Kermadec islands, probably note mainland NZ."}
+            { text: "Kermadec islands, probably not mainland NZ."}
         ],
         similarTo: [
         ],
@@ -223,7 +230,8 @@ var allCrabData = [
         memoirNiwaPage : 157,
         inaturalistLink: "https://inaturalist.nz/taxa/603299-Lophopagurus-thompsoni",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["blue", "mauve"] }
         ],
         details : [
             { text: "Carapace pale orange/red. Claws and legs orange-red with red stripes running up them. White knees.", references: [1]},
@@ -251,7 +259,8 @@ var allCrabData = [
         memoirNiwaPage : 150,
         inaturalistLink: "https://inaturalist.nz/taxa/1071800-Lophopagurus-pumilus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["yellow", "orange"] }
         ],
         details : [
             { text: "Main body is brownish with greenish claws that have white marking towards tips. Legs are banded in maroon/brown and white stripes.", references: [1]},
@@ -280,7 +289,8 @@ var allCrabData = [
         memoirNiwaPage : 161,
         inaturalistLink: "https://inaturalist.nz/taxa/1144069-Lophopagurus-foresti",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["mauve"] }
         ],
         details : [
             { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},
@@ -309,7 +319,8 @@ var allCrabData = [
         memoirNiwaPage : 161,
         inaturalistLink: "https://inaturalist.nz/taxa/1470930-Lophopagurus-triserratus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["transparent", "red"] }
         ],
         details : [
             { text: "Main colour of body and legs is a light reddish brown. Legs have white around the knees; can appare to be red &amp; white bands.", references: [1]},
@@ -336,7 +347,8 @@ var allCrabData = [
         memoirNiwaPage : 169,
         inaturalistLink: "https://inaturalist.nz/taxa/1096600-Lophopagurus-laurentae",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["brown"] }
         ],
         details : [
             { text: "Main colour of body and legs is a smoky mauve/purple."},
@@ -363,7 +375,8 @@ var allCrabData = [
         memoirNiwaPage : 196,
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["green", "blue", "white"] }
         ],
         details : [
             { text: "Main colour of body and legs is a pale green (maybe slightly bluish). Young crabs can have green and white banded legs. <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
@@ -392,7 +405,8 @@ var allCrabData = [
         memoirNiwaPage : 206,
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["red", "orange"] }
         ],
         details : [
             { text: "Main colour of body and legs is a pale blue-green. Legs and knees may have pale blue patches.", references: [1]},
@@ -421,7 +435,8 @@ var allCrabData = [
         memoirNiwaPage : 199,
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["red", "brown"] }
         ],
         details : [
             { text: "Main colour of body and legs can range from a fadded pink to a plum colour. Smaller crabs can be mostly white. Knees have white bands and can orange patches.", references: [1, 2]},
@@ -450,7 +465,8 @@ var allCrabData = [
         memoirNiwaPage : 184,
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["red", "orange"] }
         ],
         details : [
             { text: "Main colour of body and claws is a deep brown-red. Claw fingers tend to white. Legs are loosely banded in brown, orange, and white.", references: [2]},

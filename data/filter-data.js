@@ -20,7 +20,7 @@ var allFilterData = [
             { key : "green", text : "Green", image: "images/antennules-green.png" },
             { key : "blue", text : "Blue", image: "images/antennules-blue.png" },
             { key : "transparent", text : "Transparent / no colour", image: "images/antennules-transparent.png" },
-            { key : "muave", text : "Muave", image: "images/antennules-muave.png" },
+            { key : "mauve", text : "Mauve", image: "images/antennules-mauve.png" },
         ],
         question : "What colour are the antennules",
         helpText: "."
