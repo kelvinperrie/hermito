@@ -120,8 +120,9 @@
                     <div x-text="filter.question"></div>
                     <div class="possible-values-container">
                         <template x-for="possibleValue in filter.possibleValues" :key="possibleValue.key">
-                            <div class="possible-value-container" :class="{ 'selected-filter-value': possibleValue.activated }">
-                                <div x-text="possibleValue.text" @click="possibleValue.toggleActivated()"></div>
+                            <div class="possible-value-container" :class="{ 'selected-filter-value': possibleValue.activated }" @click="possibleValue.toggleActivated()">
+                                <img :src="possibleValue.image" alt="" />
+                                <div x-text="possibleValue.text"></div>
                             </div>
                         </template>
                     </div>
