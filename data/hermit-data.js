@@ -176,7 +176,7 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["blue"] }
+            { key: "antennulesColour" , values : ["blue","mauve"] }
         ],
         details : [
             { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
@@ -290,7 +290,7 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1144069-Lophopagurus-foresti",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["mauve"] }
+            { key: "antennulesColour" , values : ["blue","mauve"] }
         ],
         details : [
             { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},
