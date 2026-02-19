@@ -2,6 +2,7 @@
 <head>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="data/hermit-data.js"></script>
+    <script src="data/filter-data.js"></script>
     <style>
 
     </style>
@@ -113,11 +114,24 @@
                 </div>
             </div>
         </div>
-        [in theory I'm going to put some filters here]<br/>
+        <div class="filters-container">
+            <template x-for="filter in filters" :key="filter.key">
+                <div class="filter-container">
+                    <div x-text="filter.question"></div>
+                    <div class="possible-values-container">
+                        <template x-for="possibleValue in filter.possibleValues" :key="possibleValue.key">
+                            <div class="possible-value-container" :class="{ 'selected-filter-value': possibleValue.activated }">
+                                <div x-text="possibleValue.text" @click="possibleValue.toggleActivated()"></div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
         Your crabbies are:<br/>
         <div class="crab-tile-container">
             <!-- x-for must be on a template item? keys are important if reordering? -->
-            <template x-for="crab in crabs" :key="crab.scientificName">
+            <template x-for="crab in filteredCrabs" :key="crab.scientificName">
                 <div class="crab-tile">
                     <div class="crab-title">
                         <div class="crab-scientific-name" x-text="crab.scientificName"></div>

@@ -6,7 +6,7 @@ var allCrabData = [
         memoirNiwaPage : 73,
         inaturalistLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] }
         ],
         details : [
             { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
@@ -34,7 +34,7 @@ var allCrabData = [
         memoirNiwaPage : 135,
         inaturalistLink: "https://inaturalist.nz/taxa/497510-Diacanthurus-spinulimanus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] }
         ],
         details : [
             { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legs have purple vertical marks."},
@@ -62,7 +62,7 @@ var allCrabData = [
         memoirNiwaPage : 139,
         inaturalistLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] }
         ],
         details : [
             { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
@@ -89,7 +89,7 @@ var allCrabData = [
         memoirNiwaPage : 81,
         inaturalistLink: "https://inaturalist.nz/taxa/466901-Dardanus-arrosor",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["mainland"] }
         ],
         details : [
             { text: "Carapace is red with hints of yellow. Claws and legs yellowish-red to violet red. Knees can be a darker red.", references: [1]},
@@ -116,7 +116,7 @@ var allCrabData = [
         memoirNiwaPage : null,
         inaturalistLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["kermadec"] }
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
@@ -143,7 +143,7 @@ var allCrabData = [
         memoirNiwaPage : null,
         inaturalistLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
         attributes : [
-            { key: "example" , values : ["square","round"] }
+            { key: "geographicLocation" , values : ["kermadec"] }
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
