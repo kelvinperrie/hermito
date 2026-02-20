@@ -1,33 +1,35 @@
 var allCrabData = [
     {
-        commonName : "",
-        scientificName : "Areopaguristes setosus",
+        commonName : "New Zealand Hermit Crab",
+        scientificName : "Pagurus novizealandiae",
         aka : [],
-        memoirNiwaPage : 73,
-        inaturalistLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
+        memoirNiwaPage : 196,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["transparent", "white", "green"] }
+            { key: "antennulesColour" , values : ["green", "blue", "white"] }
         ],
         details : [
-            { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
-            { text: "Antennules, antennae, and eye stalks have no strong colouring and show as white or very light green. No banding on antennae."},
-            { text: "Claws covered in small bumps but can be furry. Left claws much larger than right.", references: [1]},
-            { text: "Carapace is from 4mm to 25.5mm.", references: [1]},
-            { text: "Mostly found from 15 to 22m, but can be intertidal.", references: [1]},
-            { text: "Habitat is shelly sand and shell-gravel.", references: [1]},
-            { text: "Found throughout New Zealand."}
+            { text: "Main colour of body and legs is a pale green (maybe slightly bluish). Young crabs can have green and white banded legs. <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
+            { text: "Eye stalks are pale bluish-green. Antennae are yellow/green with tiny black stripes (stripes may not be very visible). Antennae on younger crabs are green and white banded. Antennules are pale bluish green.", references: [1]},
+            { text: "Outer surface of claw has rows of (often bluish) bumps."},
+            { text: "??size"},
+            { text: "Intertidal.", references: [1]},
+            { text: "Under and around rocks."},
+            { text: "Common around all of New Zealand.", references: [1]}
         ],
         similarTo: [
+            { key: "Diacanthurus spinulimanus", label: "Diacanthurus spinulimanus ??? NIWA says this - they don't look alike to me???" }
         ],
         images : [
-            { url : "images/crabs/Areopaguristes setosus 01.jpg", "attribution" : { "name" : "lcolmer", "link" : "https://inaturalist.nz/observations/62745403", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
+            { url : "images/crabs/Pagurus novizealandiae 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/152989534", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurus novizealandiae 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp73-78). NIWA" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" }
         ]
     },
-        {
+    {
         commonName : "",
         scientificName : "Diacanthurus spinulimanus",
         aka : [],
@@ -56,35 +58,95 @@ var allCrabData = [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp135-139). NIWA" }
         ]
     },
-        {
+    {
         commonName : "",
-        scientificName : "Diacanthurus rubricatus",
+        scientificName : "Pagurus traversi",
         aka : [],
-        memoirNiwaPage : 139,
-        inaturalistLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
+        memoirNiwaPage : 206,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["white"] }
+            { key: "antennulesColour" , values : ["red", "orange"] }
         ],
         details : [
-            { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
-            { text: "Eye stalks white with red vertical stripe, antennae reddish brown (no bands), antennules white.", references: [1]},
-            { text: "Claws covered in small bumps."},
-            { text: "Dunno how big??????????"},
-            { text: "Most commonly found between 40 and 220m", references: [1]},
-            { text: "Habitat is ????"},
+            { text: "Main colour of body and legs is a pale blue-green. Legs and knees may have pale blue patches.", references: [1]},
+            { text: "Eye stalks are green-blue. Antennae are dark red with narrow white bands. Antennules are reddish orange.", references: [1]},
+            { text: "Outer surface of claw covered in small spikes.", references: [1]},
+            { text: "??size"},
+            { text: "Intertidal to 15m.", references: [1]},
+            { text: "On seaweeds and under rocks.", references: [1]},
+            { text: "All of New Zealand.", references: [2]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Pagurus traversi 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/189440124", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurus traversi 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/261094117", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp206-209). NIWA" },
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
+        ]
+    },
+    {
+        commonName : "",
+        scientificName : "Areopaguristes setosus",
+        aka : [],
+        memoirNiwaPage : 73,
+        inaturalistLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
+        attributes : [
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["transparent", "white", "green"] }
+        ],
+        details : [
+            { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
+            { text: "Antennules, antennae, and eye stalks have no strong colouring and show as white or very light green. No banding on antennae."},
+            { text: "Claws covered in small bumps but can be furry. Left claws much larger than right.", references: [1]},
+            { text: "Carapace is from 4mm to 25.5mm.", references: [1]},
+            { text: "Mostly found from 15 to 22m, but can be intertidal.", references: [1]},
+            { text: "Habitat is shelly sand and shell-gravel.", references: [1]},
             { text: "Found throughout New Zealand."}
         ],
         similarTo: [
         ],
         images : [
-            { url : "images/crabs/Diacanthurus rubricatus 01.jpg", "attribution" : { "name" : "Shaun", "link" : "https://inaturalist.nz/observations/24495318", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+            { url : "images/crabs/Areopaguristes setosus 01.jpg", "attribution" : { "name" : "lcolmer", "link" : "https://inaturalist.nz/observations/62745403", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp139-142). NIWA" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp73-78). NIWA" }
         ]
     },
-        {
+    {
+        commonName : "",
+        scientificName : "Pagurixus hectori",
+        aka : [],
+        memoirNiwaPage : 184,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        attributes : [
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["red", "orange"] }
+        ],
+        details : [
+            { text: "Main colour of body and claws is a deep brown-red. Claw fingers tend to white. Legs are loosely banded in brown, orange, and white.", references: [2]},
+            { text: "Eye stalks are brown with white bands or markings. Antennae are brown with narrow white bands. Antennules are orange/red.", references: [2]},
+            { text: "<b>Outer surface of claws are smooth.</b>"},
+            { text: "??size"},
+            { text: "Intertidal.", references: [1]},
+            { text: "Rockpools and under rocks."},
+            { text: "Probably most of New Zealand.", references: [2]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Pagurixus hectori 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/196005149", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurixus hectori 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/92721199", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp184-187). NIWA" },
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
+        ]
+    },
+    {
         commonName : "",
         scientificName : "Dardanus arrosor",
         aka : [],
@@ -112,118 +174,37 @@ var allCrabData = [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp81-85). NIWA" }
         ]
     },
-        {
+    {
         commonName : "",
-        scientificName : "Dardanus longior",
+        scientificName : "Pagurus albidianthus",
         aka : [],
-        memoirNiwaPage : null,
-        inaturalistLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
-        attributes : [
-            { key: "geographicLocation" , values : ["kermadec"] },
-            { key: "antennulesColour" , values : ["yellow"] }
-        ],
-        details : [
-            { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
-            { text: "Eye stalks white with undertones of red. Antennae and antennules pale yellow."},
-            { text: "???Outer surface of claws ????"},
-            { text: "???Unsure on size"},
-            { text: "???Problably on depth"},
-            { text: "???Habitat is unknown????"},
-            { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
-        ],
-        similarTo: [
-            { key: "Dardanus sanguinolentus", label: "Dardanus sanguinolentus" }
-        ],
-        images : [
-            { url : "images/crabs/Dardanus longior 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297119369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
-        ],
-        references : [
-        ]
-    },
-        {
-        commonName : "",
-        scientificName : "Dardanus sanguinolentus",
-        aka : [],
-        memoirNiwaPage : null,
-        inaturalistLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
-        attributes : [
-            { key: "geographicLocation" , values : ["kermadec"] },
-            { key: "antennulesColour" , values : ["yellow"] }
-        ],
-        details : [
-            { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
-            { text: "Eye stalks white. Antennae and antennules yellow."},
-            { text: "Outer surface of claws has bumps."},
-            { text: "???Unsure on size"},
-            { text: "???Problably on depth"},
-            { text: "???Habitat is unknown????"},
-            { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
-        ],
-        similarTo: [
-            { key: "Dardanus longior", label: "Dardanus longior" }
-        ],
-        images : [
-            { url : "images/crabs/Dardanus sanguinolentus 01.jpg", "attribution" : { "name" : "Malcolm Francis", "link" : "https://inaturalist.nz/observations/252476447", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
-        ],
-        references : [
-        ]
-    },
-        {
-        commonName : "",
-        scientificName : "Paguristes barbatus",
-        aka : [],
-        memoirNiwaPage : 59,
-        inaturalistLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
+        memoirNiwaPage : 199,
+        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["blue","mauve"] }
+            { key: "antennulesColour" , values : ["red", "brown"] }
         ],
         details : [
-            { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
-            { text: "Eye stalks, antennae, and antennules are blue.", references: [1]},
-            { text: "Outer surface of claws has bumps."},
-            { text: "5.9mm to 8.9mm carapace length.", references: [1]},
-            { text: "Between 20 and 37m.", references: [1]},
-            { text: "???Habitat is unknown????"},
-            { text: "North Island, probably north of Auckland.", references: [1]}
-        ],
-        similarTo: [
-        ],
-        images : [
-            { url : "images/crabs/Paguristes barbatus 01.jpg", "attribution" : { "name" : "tangatawhenua", "link" : "https://inaturalist.nz/observations/4235848", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
-        ],
-        references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp59-63). NIWA" }
-        ]
-    },
-        {
-        commonName : "Queensland Hermit Crab",
-        scientificName : "Calcinus sirius",
-        aka : [],
-        memoirNiwaPage : null,
-        inaturalistLink: "https://inaturalist.nz/taxa/1080999-Calcinus-sirius",
-        attributes : [
-            { key: "geographicLocation" , values : ["kermadec"] },
-            { key: "antennulesColour" , values : ["yellow", "red", "pink"] }
-        ],
-        details : [
-            { text: "Carapace reddish, pink. Claws and legs alternating white and pink/red - not really in bands. Lower claws and fingers white. Darker red often at the knees."},
-            { text: "Eye stalks pinkish, can be violet below the eyes. Antennae, and antennules are yellow or light red/pink."},
-            { text: "Outer surface of claws smooth."},
+            { text: "Main colour of body and legs can range from a fadded pink to a plum colour. Smaller crabs can be mostly white. Knees have white bands and can orange patches.", references: [1, 2]},
+            { text: "Eye stalks are light brown or reddish. Antennae are light brown with narrow white bands. Antennules are light brown or reddish.", references: [1]},
+            { text: "Outer surface of claw probably appear smooth, but actually covered in small/subtle bumps.", references: [1]},
             { text: "??size"},
-            { text: "??depth"},
-            { text: "???Habitat is unknown????"},
-            { text: "Kermadec islands, probably not mainland NZ."}
+            { text: "Probably intertidalish / close to the beach.", references: [1]},
+            { text: "Mainly on sand.", references: [1]},
+            { text: "Probably all of New Zealand.", references: [2]}
         ],
         similarTo: [
         ],
         images : [
-            { url : "images/crabs/Calcinus sirius 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297120139", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+            { url : "images/crabs/Pagurus albidianthus 01.jpg", "attribution" : { "name" : "Zachary Robertson", "link" : "https://inaturalist.nz/observations/270599369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
+            { url : "images/crabs/Pagurus albidianthus 02.jpg", "attribution" : { "name" : "Evelyn Virens", "link" : "https://inaturalist.nz/observations/40682385", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp199-206). NIWA" },
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
         ]
     },
-        {
+    {
         commonName : "",
         scientificName : "Lophopagurus thompsoni",
         aka : [],
@@ -252,7 +233,7 @@ var allCrabData = [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp157-161). NIWA" }
         ]
     },
-        {
+    {
         commonName : "",
         scientificName : "Lophopagurus pumilus",
         aka : [],
@@ -282,37 +263,7 @@ var allCrabData = [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp150-153). NIWA" }
         ]
     },
-        {
-        commonName : "",
-        scientificName : "Lophopagurus foresti",
-        aka : [],
-        memoirNiwaPage : 161,
-        inaturalistLink: "https://inaturalist.nz/taxa/1144069-Lophopagurus-foresti",
-        attributes : [
-            { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["blue","mauve"] }
-        ],
-        details : [
-            { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},
-            { text: "Eye stalks are ??????. Antennae are banded in reddish-brown and white. Antennules are mauve.", references: [1]},
-            { text: "Outer surface of right claw has small bumps; left has less bumps. Claws have a ridge running down them", references: [1]},
-            { text: "??size"},
-            { text: "Intertidal to 220m", references: [1]},
-            { text: "Gravel or mud.", references: [1]},
-            { text: "Probably most of mainland New Zealand.", references: [1]},
-            { text: "??how to distinguish from Lophopagurus thompsoni"},
-        ],
-        similarTo: [
-            { key: "Lophopagurus thompsoni", label: "Lophopagurus thompsoni" }
-        ],
-        images : [
-            { url : "images/noimage.png", "attribution" : { "name" : "None", "link" : "", "licenseUrl" : "" } }
-        ],
-        references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp161-163). NIWA" }
-        ]
-    },
-        {
+    {
         commonName : "",
         scientificName : "Lophopagurus triserratus",
         aka : [],
@@ -338,6 +289,62 @@ var allCrabData = [
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp177-179). NIWA" }
+        ]
+    },
+    {
+        commonName : "",
+        scientificName : "Diacanthurus rubricatus",
+        aka : [],
+        memoirNiwaPage : 139,
+        inaturalistLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
+        attributes : [
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["white"] }
+        ],
+        details : [
+            { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
+            { text: "Eye stalks white with red vertical stripe, antennae reddish brown (no bands), antennules white.", references: [1]},
+            { text: "Claws covered in small bumps."},
+            { text: "Dunno how big??????????"},
+            { text: "Most commonly found between 40 and 220m", references: [1]},
+            { text: "Habitat is ????"},
+            { text: "Found throughout New Zealand."}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Diacanthurus rubricatus 01.jpg", "attribution" : { "name" : "Shaun", "link" : "https://inaturalist.nz/observations/24495318", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp139-142). NIWA" }
+        ]
+    },
+    {
+        commonName : "",
+        scientificName : "Paguristes barbatus",
+        aka : [],
+        memoirNiwaPage : 59,
+        inaturalistLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
+        attributes : [
+            { key: "geographicLocation" , values : ["mainland"] },
+            { key: "antennulesColour" , values : ["blue","mauve"] }
+        ],
+        details : [
+            { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
+            { text: "Eye stalks, antennae, and antennules are blue.", references: [1]},
+            { text: "Outer surface of claws has bumps."},
+            { text: "5.9mm to 8.9mm carapace length.", references: [1]},
+            { text: "Between 20 and 37m.", references: [1]},
+            { text: "???Habitat is unknown????"},
+            { text: "North Island, probably north of Auckland.", references: [1]}
+        ],
+        similarTo: [
+        ],
+        images : [
+            { url : "images/crabs/Paguristes barbatus 01.jpg", "attribution" : { "name" : "tangatawhenua", "link" : "https://inaturalist.nz/observations/4235848", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+        ],
+        references : [
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae (pp59-63). NIWA" }
         ]
     },
         {
@@ -368,124 +375,117 @@ var allCrabData = [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp169-171). NIWA" }
         ]
     },
-        {
-        commonName : "New Zealand Hermit Crab",
-        scientificName : "Pagurus novizealandiae",
+    {
+        commonName : "",
+        scientificName : "Dardanus longior",
         aka : [],
-        memoirNiwaPage : 196,
-        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        memoirNiwaPage : null,
+        inaturalistLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["green", "blue", "white"] }
+            { key: "geographicLocation" , values : ["kermadec"] },
+            { key: "antennulesColour" , values : ["yellow"] }
         ],
         details : [
-            { text: "Main colour of body and legs is a pale green (maybe slightly bluish). Young crabs can have green and white banded legs. <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
-            { text: "Eye stalks are pale bluish-green. Antennae are yellow/green with tiny black stripes (stripes may not be very visible). Antennae on younger crabs are green and white banded. Antennules are pale bluish green.", references: [1]},
-            { text: "Outer surface of claw has rows of (often bluish) bumps."},
-            { text: "??size"},
-            { text: "Intertidal.", references: [1]},
-            { text: "Under and around rocks."},
-            { text: "Common around all of New Zealand.", references: [1]}
+            { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
+            { text: "Eye stalks white with undertones of red. Antennae and antennules pale yellow."},
+            { text: "???Outer surface of claws ????"},
+            { text: "???Unsure on size"},
+            { text: "???Problably on depth"},
+            { text: "???Habitat is unknown????"},
+            { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
         ],
         similarTo: [
-            { key: "Diacanthurus spinulimanus", label: "Diacanthurus spinulimanus ??? NIWA says this - they don't look alike to me???" }
+            { key: "Dardanus sanguinolentus", label: "Dardanus sanguinolentus" }
         ],
         images : [
-            { url : "images/crabs/Pagurus novizealandiae 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/152989534", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
-            { url : "images/crabs/Pagurus novizealandiae 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+            { url : "images/crabs/Dardanus longior 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297119369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" }
         ]
     },
-        {
+    {
         commonName : "",
-        scientificName : "Pagurus traversi",
+        scientificName : "Dardanus sanguinolentus",
         aka : [],
-        memoirNiwaPage : 206,
-        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        memoirNiwaPage : null,
+        inaturalistLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "orange"] }
+            { key: "geographicLocation" , values : ["kermadec"] },
+            { key: "antennulesColour" , values : ["yellow"] }
         ],
         details : [
-            { text: "Main colour of body and legs is a pale blue-green. Legs and knees may have pale blue patches.", references: [1]},
-            { text: "Eye stalks are green-blue. Antennae are dark red with narrow white bands. Antennules are reddish orange.", references: [1]},
-            { text: "Outer surface of claw covered in small spikes.", references: [1]},
-            { text: "??size"},
-            { text: "Intertidal to 15m.", references: [1]},
-            { text: "On seaweeds and under rocks.", references: [1]},
-            { text: "All of New Zealand.", references: [2]}
+            { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
+            { text: "Eye stalks white. Antennae and antennules yellow."},
+            { text: "Outer surface of claws has bumps."},
+            { text: "???Unsure on size"},
+            { text: "???Problably on depth"},
+            { text: "???Habitat is unknown????"},
+            { text: "???Kermadec islands and NOT mainland NZ - based on observations in iNaturalist."}
         ],
         similarTo: [
+            { key: "Dardanus longior", label: "Dardanus longior" }
         ],
         images : [
-            { url : "images/crabs/Pagurus traversi 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/189440124", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
-            { url : "images/crabs/Pagurus traversi 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/261094117", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+            { url : "images/crabs/Dardanus sanguinolentus 01.jpg", "attribution" : { "name" : "Malcolm Francis", "link" : "https://inaturalist.nz/observations/252476447", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp206-209). NIWA" },
-            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
         ]
     },
-        {
-        commonName : "",
-        scientificName : "Pagurus albidianthus",
+    {
+        commonName : "Queensland Hermit Crab",
+        scientificName : "Calcinus sirius",
         aka : [],
-        memoirNiwaPage : 199,
-        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        memoirNiwaPage : null,
+        inaturalistLink: "https://inaturalist.nz/taxa/1080999-Calcinus-sirius",
         attributes : [
-            { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "brown"] }
+            { key: "geographicLocation" , values : ["kermadec"] },
+            { key: "antennulesColour" , values : ["yellow", "red", "pink"] }
         ],
         details : [
-            { text: "Main colour of body and legs can range from a fadded pink to a plum colour. Smaller crabs can be mostly white. Knees have white bands and can orange patches.", references: [1, 2]},
-            { text: "Eye stalks are light brown or reddish. Antennae are light brown with narrow white bands. Antennules are light brown or reddish.", references: [1]},
-            { text: "Outer surface of claw probably appear smooth, but actually covered in small/subtle bumps.", references: [1]},
+            { text: "Carapace reddish, pink. Claws and legs alternating white and pink/red - not really in bands. Lower claws and fingers white. Darker red often at the knees."},
+            { text: "Eye stalks pinkish, can be violet below the eyes. Antennae, and antennules are yellow or light red/pink."},
+            { text: "Outer surface of claws smooth."},
             { text: "??size"},
-            { text: "Probably intertidalish / close to the beach.", references: [1]},
-            { text: "Mainly on sand.", references: [1]},
-            { text: "Probably all of New Zealand.", references: [2]}
+            { text: "??depth"},
+            { text: "???Habitat is unknown????"},
+            { text: "Kermadec islands, probably not mainland NZ."}
         ],
         similarTo: [
         ],
         images : [
-            { url : "images/crabs/Pagurus albidianthus 01.jpg", "attribution" : { "name" : "Zachary Robertson", "link" : "https://inaturalist.nz/observations/270599369", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } },
-            { url : "images/crabs/Pagurus albidianthus 02.jpg", "attribution" : { "name" : "Evelyn Virens", "link" : "https://inaturalist.nz/observations/40682385", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
+            { url : "images/crabs/Calcinus sirius 01.jpg", "attribution" : { "name" : "pcaiger", "link" : "https://inaturalist.nz/observations/297120139", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp199-206). NIWA" },
-            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
         ]
     },
-        {
+    {
         commonName : "",
-        scientificName : "Pagurixus hectori",
+        scientificName : "Lophopagurus foresti",
         aka : [],
-        memoirNiwaPage : 184,
-        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        memoirNiwaPage : 161,
+        inaturalistLink: "https://inaturalist.nz/taxa/1144069-Lophopagurus-foresti",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "orange"] }
+            { key: "antennulesColour" , values : ["blue","mauve"] }
         ],
         details : [
-            { text: "Main colour of body and claws is a deep brown-red. Claw fingers tend to white. Legs are loosely banded in brown, orange, and white.", references: [2]},
-            { text: "Eye stalks are brown with white bands or markings. Antennae are brown with narrow white bands. Antennules are orange/red.", references: [2]},
-            { text: "<b>Outer surface of claws are smooth.</b>"},
+            { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},
+            { text: "Eye stalks are ??????. Antennae are banded in reddish-brown and white. Antennules are mauve.", references: [1]},
+            { text: "Outer surface of right claw has small bumps; left has less bumps. Claws have a ridge running down them", references: [1]},
             { text: "??size"},
-            { text: "Intertidal.", references: [1]},
-            { text: "Rockpools and under rocks."},
-            { text: "Probably most of New Zealand.", references: [2]}
+            { text: "Intertidal to 220m", references: [1]},
+            { text: "Gravel or mud.", references: [1]},
+            { text: "Probably most of mainland New Zealand.", references: [1]},
+            { text: "??how to distinguish from Lophopagurus thompsoni"},
         ],
         similarTo: [
+            { key: "Lophopagurus thompsoni", label: "Lophopagurus thompsoni" }
         ],
         images : [
-            { url : "images/crabs/Pagurixus hectori 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/196005149", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
-            { url : "images/crabs/Pagurixus hectori 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/92721199", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+            { url : "images/noimage.png", "attribution" : { "name" : "None", "link" : "", "licenseUrl" : "" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp184-187). NIWA" },
-            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp161-163). NIWA" }
         ]
     }
 ]
