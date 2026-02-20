@@ -367,6 +367,7 @@ footer {
     color: #fff;
     text-align: center;
     font-size: .8em;
+    min-width: 66px;
 }
 
 .selected-filter-value {
