@@ -24,5 +24,16 @@ var allFilterData = [
         ],
         question : "What colour are the antennules",
         helpText: "."
+    },
+    {
+        key : "outerClawSurface",
+        possibleValues : [
+            { key : "smallBumps", text : "Small Bumps", image: "images/outerClawSurface-smallBumps.png" },
+            { key : "smooth", text : "Smooth", image: "images/outerClawSurface-smooth.png" },
+            { key : "furry", text : "Furry", image: "images/outerClawSurface-furry.png" },
+            { key : "lined", text : "Lined", image: "images/outerClawSurface-lined.png" },
+        ],
+        question : "What is the outer suface of the claw like",
+        helpText: "."
     }
 ]

@@ -7,14 +7,15 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["green", "blue", "white"] }
+            { key: "antennulesColour" , values : ["green", "blue", "white"] },
+            { key: "outerClawSurface" , values : ["smallBumps", "furry"] },
         ],
         details : [
             { text: "Main colour of body and legs is a pale green (maybe slightly bluish). Young crabs can have green and white banded legs. <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
             { text: "Eye stalks are pale bluish-green. Antennae are yellow/green with tiny black stripes (stripes may not be very visible). Antennae on younger crabs are green and white banded. Antennules are pale bluish green.", references: [1]},
             { text: "Outer surface of claw has rows of (often bluish) bumps."},
             { text: "??size"},
-            { text: "Intertidal.", references: [1]},
+            { text: "Intertidal to around 15m.", references: [2]},
             { text: "Under and around rocks."},
             { text: "Common around all of New Zealand.", references: [1]}
         ],
@@ -26,7 +27,8 @@ var allCrabData = [
             { url : "images/crabs/Pagurus novizealandiae 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" },
+            { id: 2, detail: "Wikipedia. Available from https://en.wikipedia.org, Wikimedia Foundation. Accessed 15/02/2026." }
         ]
     },
     {
@@ -37,7 +39,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/497510-Diacanthurus-spinulimanus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "orange"] }
+            { key: "antennulesColour" , values : ["red", "orange"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] },
         ],
         details : [
             { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legs have purple vertical marks."},
@@ -66,13 +69,14 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "orange"] }
+            { key: "antennulesColour" , values : ["red", "orange"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] },
         ],
         details : [
             { text: "Main colour of body and legs is a pale blue-green. Legs and knees may have pale blue patches.", references: [1]},
             { text: "Eye stalks are green-blue. Antennae are dark red with narrow white bands. Antennules are reddish orange.", references: [1]},
             { text: "Outer surface of claw covered in small spikes.", references: [1]},
-            { text: "??size"},
+            { text: "Max 8.1mm length", references: [3]},
             { text: "Intertidal to 15m.", references: [1]},
             { text: "On seaweeds and under rocks.", references: [1]},
             { text: "All of New Zealand.", references: [2]}
@@ -85,7 +89,8 @@ var allCrabData = [
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp206-209). NIWA" },
-            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." }
+            { id: 2, detail : "iNaturalist. Available from https://www.inaturalist.org. Accessed 15/02/2026." },
+            { id: 3, detail : "Wikipedia. Available from https://en.wikipedia.org, Wikimedia Foundation. Accessed 15/02/2026." }
         ]
     },
     {
@@ -96,13 +101,14 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/636902-Areopaguristes-setosus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["transparent", "white", "green"] }
+            { key: "antennulesColour" , values : ["transparent", "white", "green"] },
+            { key: "outerClawSurface" , values : ["smallBumps", "furry"] }
         ],
         details : [
             { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
             { text: "Antennules, antennae, and eye stalks have no strong colouring and show as white or very light green. No banding on antennae."},
             { text: "Claws covered in small bumps but can be furry. Left claws much larger than right.", references: [1]},
-            { text: "Carapace is from 4mm to 25.5mm.", references: [1]},
+            { text: "Carapace is from 4mm to 25.5mm in length.", references: [1]},
             { text: "Mostly found from 15 to 22m, but can be intertidal.", references: [1]},
             { text: "Habitat is shelly sand and shell-gravel.", references: [1]},
             { text: "Found throughout New Zealand."}
@@ -124,7 +130,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "orange"] }
+            { key: "antennulesColour" , values : ["red", "orange"] },
+            { key: "outerClawSurface" , values : ["smooth"] }
         ],
         details : [
             { text: "Main colour of body and claws is a deep brown-red. Claw fingers tend to white. Legs are loosely banded in brown, orange, and white.", references: [2]},
@@ -154,7 +161,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/466901-Dardanus-arrosor",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "yellow"] }
+            { key: "antennulesColour" , values : ["red", "yellow"] },
+            { key: "outerClawSurface" , values : ["smooth","lined"] }
         ],
         details : [
             { text: "Carapace is red with hints of yellow. Claws and legs yellowish-red to violet red. Knees can be a darker red.", references: [1]},
@@ -182,7 +190,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "brown"] }
+            { key: "antennulesColour" , values : ["red", "brown"] },
+            { key: "outerClawSurface" , values : ["smooth","smallBumps"] }
         ],
         details : [
             { text: "Main colour of body and legs can range from a fadded pink to a plum colour. Smaller crabs can be mostly white. Knees have white bands and can orange patches.", references: [1, 2]},
@@ -212,7 +221,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/603299-Lophopagurus-thompsoni",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["blue", "mauve"] }
+            { key: "antennulesColour" , values : ["blue", "mauve"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] }
         ],
         details : [
             { text: "Carapace pale orange/red. Claws and legs orange-red with red stripes running up them. White knees.", references: [1]},
@@ -241,7 +251,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1071800-Lophopagurus-pumilus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["yellow", "orange"] }
+            { key: "antennulesColour" , values : ["yellow", "orange"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] }
         ],
         details : [
             { text: "Main body is brownish with greenish claws that have white marking towards tips. Legs are banded in maroon/brown and white stripes.", references: [1]},
@@ -267,16 +278,17 @@ var allCrabData = [
         commonName : "",
         scientificName : "Lophopagurus triserratus",
         aka : [],
-        memoirNiwaPage : 161,
+        memoirNiwaPage : 177,
         inaturalistLink: "https://inaturalist.nz/taxa/1470930-Lophopagurus-triserratus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["transparent", "red"] }
+            { key: "antennulesColour" , values : ["transparent", "red"] },
+            { key: "outerClawSurface" , values : ["smooth", "smallBumps"] }
         ],
         details : [
             { text: "Main colour of body and legs is a light reddish brown. Legs have white around the knees; can appare to be red &amp; white bands.", references: [1]},
             { text: "Eye stalks are ??????. Antennae are banded in reddish-brown and white. Antennules have very little colour; transparent / light red.", references: [1]},
-            { text: "Outer surface of claw is smooth, may have a line of small bump through the middle", references: [1]},
+            { text: "Outer surface of claw is smooth on larger and may have a line of small bump through the middle. Small crabs have a bumpy outer surface.", references: [1,2]},
             { text: "??size"},
             { text: "60 to 400m", references: [1]},
             { text: "Often found in tubes attached to rocks, originally made by worms (so can't move around).", references: [1]},
@@ -288,7 +300,8 @@ var allCrabData = [
             { url : "images/crabs/Lophopagurus triserratus 01.jpg", "attribution" : { "name" : "Luca Davenport-Thomas", "link" : "https://inaturalist.nz/observations/283825278", "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/" } }
         ],
         references : [
-            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp177-179). NIWA" }
+            { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp177-179). NIWA" },
+            { id: 2, detail : "Wikipedia. Available from https://en.wikipedia.org, Wikimedia Foundation. Accessed 15/02/2026." }
         ]
     },
     {
@@ -299,7 +312,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/514925-Diacanthurus-rubricatus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["white"] }
+            { key: "antennulesColour" , values : ["white"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] }
         ],
         details : [
             { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
@@ -327,7 +341,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/472058-Paguristes-barbatus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["blue","mauve"] }
+            { key: "antennulesColour" , values : ["blue","mauve"] },
+            { key: "outerClawSurface" , values : ["smooth", "smallBumps"] }
         ],
         details : [
             { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
@@ -355,12 +370,13 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1096600-Lophopagurus-laurentae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["brown"] }
+            { key: "antennulesColour" , values : ["brown"] },
+            { key: "outerClawSurface" , values : ["smooth"] }
         ],
         details : [
             { text: "Main colour of body and legs is a smoky mauve/purple."},
             { text: "Eye stalks are pale brown. Antennae are purple-brown with narrow white bands. Antennules are pale brown.", references: [1]},
-            { text: "Outer surface of claw is mostly smooth, made up of tiny bumps, almost appearing scaly."},
+            { text: "Outer surface of claw is mostly smooth, almost appearing scaly.", references: [1]},
             { text: "??size"},
             { text: "Mostly between 25 and 60m", references: [1]},
             { text: "Probably sandy."},
@@ -383,12 +399,13 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1286751-Dardanus-longior",
         attributes : [
             { key: "geographicLocation" , values : ["kermadec"] },
-            { key: "antennulesColour" , values : ["yellow"] }
+            { key: "antennulesColour" , values : ["yellow"] },
+            { key: "outerClawSurface" , values : ["furry", "smooth"] }
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
             { text: "Eye stalks white with undertones of red. Antennae and antennules pale yellow."},
-            { text: "???Outer surface of claws ????"},
+            { text: "???Outer surface of claws are smooth, but probably a bit furry????"},
             { text: "???Unsure on size"},
             { text: "???Problably on depth"},
             { text: "???Habitat is unknown????"},
@@ -411,7 +428,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1287081-Dardanus-sanguinolentus",
         attributes : [
             { key: "geographicLocation" , values : ["kermadec"] },
-            { key: "antennulesColour" , values : ["yellow"] }
+            { key: "antennulesColour" , values : ["yellow"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] }
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
@@ -439,7 +457,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1080999-Calcinus-sirius",
         attributes : [
             { key: "geographicLocation" , values : ["kermadec"] },
-            { key: "antennulesColour" , values : ["yellow", "red", "pink"] }
+            { key: "antennulesColour" , values : ["yellow", "red", "pink"] },
+            { key: "outerClawSurface" , values : ["smooth"] }
         ],
         details : [
             { text: "Carapace reddish, pink. Claws and legs alternating white and pink/red - not really in bands. Lower claws and fingers white. Darker red often at the knees."},
@@ -466,7 +485,8 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/1144069-Lophopagurus-foresti",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["blue","mauve"] }
+            { key: "antennulesColour" , values : ["blue","mauve"] },
+            { key: "outerClawSurface" , values : ["smallBumps"] }
         ],
         details : [
             { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},
