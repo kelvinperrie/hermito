@@ -354,6 +354,9 @@ footer {
 
 /* filter styles */
 
+.filters-container{
+    margin: 0.75em;
+}
 .possible-values-container {
     display: flex;
     align-items: center;
