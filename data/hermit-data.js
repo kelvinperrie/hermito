@@ -190,7 +190,7 @@ var allCrabData = [
         inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
-            { key: "antennulesColour" , values : ["red", "brown"] },
+            { key: "antennulesColour" , values : ["red", "brown", "orange"] },
             { key: "outerClawSurface" , values : ["smooth","smallBumps"] }
         ],
         details : [
