@@ -293,7 +293,7 @@ var allCrabData = [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["transparent", "red"] },
             { key: "outerClawSurface" , values : ["smooth", "smallBumps"] },
-            { key: "antenaeColour" , values : ["white","red","redWhiteBands"] },
+            { key: "antenaeColour" , values : ["redWhiteBands","brownWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and legs is a light reddish brown. Legs have white around the knees; can appare to be red &amp; white bands.", references: [1]},
