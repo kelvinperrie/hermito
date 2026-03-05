@@ -9,6 +9,7 @@ var allCrabData = [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["green", "blue", "white"] },
             { key: "outerClawSurface" , values : ["smallBumps", "furry"] },
+            { key: "antenaeColour" , values : ["green", "yellow", "greenWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and legs is a pale green (maybe slightly bluish). Young crabs can have green and white banded legs. <b>Knees are bright blue.</b> Covered in tufts of golden hairs.", references: [1]},
@@ -41,6 +42,7 @@ var allCrabData = [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["red", "orange"] },
             { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["redWhiteBands"] },
         ],
         details : [
             { text: "Dark red/brown in colour - can be furry (so colour hidden). Knees are purple. Legs have purple vertical marks."},
@@ -71,6 +73,7 @@ var allCrabData = [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["red", "orange"] },
             { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["redWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and legs is a pale blue-green. Legs and knees may have pale blue patches.", references: [1]},
@@ -102,7 +105,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["transparent", "white", "green"] },
-            { key: "outerClawSurface" , values : ["smallBumps", "furry"] }
+            { key: "outerClawSurface" , values : ["smallBumps", "furry"] },
+            { key: "antenaeColour" , values : ["white","green"] },
         ],
         details : [
             { text: "Light reddish or mostly white - fur can make them appear olive green. Fingers and leg tips tend towards orange; extreme tips may be white."},
@@ -131,7 +135,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["red", "orange"] },
-            { key: "outerClawSurface" , values : ["smooth"] }
+            { key: "outerClawSurface" , values : ["smooth"] },
+            { key: "antenaeColour" , values : ["brownWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and claws is a deep brown-red. Claw fingers tend to white. Legs are loosely banded in brown, orange, and white.", references: [2]},
@@ -162,7 +167,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["red", "yellow"] },
-            { key: "outerClawSurface" , values : ["smooth","lined"] }
+            { key: "outerClawSurface" , values : ["smooth","lined"] },
+            { key: "antenaeColour" , values : ["red", "yellow"] },
         ],
         details : [
             { text: "Carapace is red with hints of yellow. Claws and legs yellowish-red to violet red. Knees can be a darker red.", references: [1]},
@@ -187,11 +193,12 @@ var allCrabData = [
         scientificName : "Pagurus albidianthus",
         aka : [],
         memoirNiwaPage : 199,
-        inaturalistLink: "https://inaturalist.nz/taxa/489920-Pagurus-novizealandiae",
+        inaturalistLink: "https://inaturalist.nz/taxa/962623-Pagurus-albidianthus",
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["red", "brown", "orange"] },
-            { key: "outerClawSurface" , values : ["smooth","smallBumps"] }
+            { key: "outerClawSurface" , values : ["smooth","smallBumps"] },
+            { key: "antenaeColour" , values : ["redWhiteBands", "brownWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and legs can range from a fadded pink to a plum colour. Smaller crabs can be mostly white. Knees have white bands and can orange patches.", references: [1, 2]},
@@ -222,7 +229,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["blue", "mauve"] },
-            { key: "outerClawSurface" , values : ["smallBumps"] }
+            { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["redWhiteBands", "brownWhiteBands"] },
         ],
         details : [
             { text: "Carapace pale orange/red. Claws and legs orange-red with red stripes running up them. White knees.", references: [1]},
@@ -252,7 +260,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["yellow", "orange"] },
-            { key: "outerClawSurface" , values : ["smallBumps"] }
+            { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["maroonWhiteBands","brownWhiteBands"] },
         ],
         details : [
             { text: "Main body is brownish with greenish claws that have white marking towards tips. Legs are banded in maroon/brown and white stripes.", references: [1]},
@@ -283,7 +292,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["transparent", "red"] },
-            { key: "outerClawSurface" , values : ["smooth", "smallBumps"] }
+            { key: "outerClawSurface" , values : ["smooth", "smallBumps"] },
+            { key: "antenaeColour" , values : ["white","red","redWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and legs is a light reddish brown. Legs have white around the knees; can appare to be red &amp; white bands.", references: [1]},
@@ -313,7 +323,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["white"] },
-            { key: "outerClawSurface" , values : ["smallBumps"] }
+            { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["red","brown"] },
         ],
         details : [
             { text: "Claws and legs yellow-brown colour. Knees have bright red bands. Legshave purple vertical marks.", references: [1]},
@@ -342,7 +353,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["blue","mauve"] },
-            { key: "outerClawSurface" , values : ["smooth", "smallBumps"] }
+            { key: "outerClawSurface" , values : ["smooth", "smallBumps"] },
+            { key: "antenaeColour" , values : ["blue"] },
         ],
         details : [
             { text: "Carapace, claws, and legs are brown. Claws and legs are tipped with black.", references: [1]},
@@ -371,7 +383,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["brown"] },
-            { key: "outerClawSurface" , values : ["smooth"] }
+            { key: "outerClawSurface" , values : ["smooth"] },
+            { key: "antenaeColour" , values : ["brownWhiteBands","maroonWhiteBands"] },
         ],
         details : [
             { text: "Main colour of body and legs is a smoky mauve/purple."},
@@ -400,7 +413,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["kermadec"] },
             { key: "antennulesColour" , values : ["yellow"] },
-            { key: "outerClawSurface" , values : ["furry", "smooth"] }
+            { key: "outerClawSurface" , values : ["furry", "smooth"] },
+            { key: "antenaeColour" , values : ["yellow"] },
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white."},
@@ -429,7 +443,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["kermadec"] },
             { key: "antennulesColour" , values : ["yellow"] },
-            { key: "outerClawSurface" , values : ["smallBumps"] }
+            { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["yellow"] },
         ],
         details : [
             { text: "Carapace is orange/red. Claws and legs with bands of orange/red with white. Has red knees."},
@@ -458,7 +473,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["kermadec"] },
             { key: "antennulesColour" , values : ["yellow", "red", "pink"] },
-            { key: "outerClawSurface" , values : ["smooth"] }
+            { key: "outerClawSurface" , values : ["smooth"] },
+            { key: "antenaeColour" , values : ["yellow","red","pink"] },
         ],
         details : [
             { text: "Carapace reddish, pink. Claws and legs alternating white and pink/red - not really in bands. Lower claws and fingers white. Darker red often at the knees."},
@@ -486,7 +502,8 @@ var allCrabData = [
         attributes : [
             { key: "geographicLocation" , values : ["mainland"] },
             { key: "antennulesColour" , values : ["blue","mauve"] },
-            { key: "outerClawSurface" , values : ["smallBumps"] }
+            { key: "outerClawSurface" , values : ["smallBumps"] },
+            { key: "antenaeColour" , values : ["redWhiteBands","brownWhiteBands"] },
         ],
         details : [
             { text: "Main colour is whitish pink(?). Legs have red stripes running down them.", references: [1]},

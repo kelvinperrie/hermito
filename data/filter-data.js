@@ -35,5 +35,23 @@ var allFilterData = [
         ],
         question : "What is the outer suface of the claw like",
         helpText: "."
+    },
+    {
+        key : "antenaeColour",
+        possibleValues : [
+            { key : "yellow", text : "Yellow", image: "images/antenaeColour-yellow.png" },
+            { key : "green", text : "Green", image: "images/antenaeColour-green.png" },
+            { key : "greenWhiteBands", text : "Green & white bands", image: "images/antenaeColour-greenWhiteBands.png" },
+            { key : "pink", text : "Pink", image: "images/antenaeColour-pink.png" },
+            { key : "red", text : "Red", image: "images/antenaeColour-red.png" },
+            { key : "redWhiteBands", text : "Red & white bands", image: "images/antenaeColour-redWhiteBands.png" },
+            { key : "white", text : "White / no strong colouring", image: "images/antenaeColour-white.png" },
+            { key : "brown", text : "Redish brown", image: "images/antenaeColour-brown.png" },
+            { key : "brownWhiteBands", text : "Brown with white bands", image: "images/antenaeColour-brownWhiteBands.png" },
+            { key : "blue", text : "Blue", image: "images/antenaeColour-blue.png" },
+            { key : "maroonWhiteBands", text : "Maroon with white bands", image: "images/antenaeColour-maroonWhiteBands.png" },
+        ],
+        question : "What is the outer suface of the claw like",
+        helpText: "."
     }
 ]
