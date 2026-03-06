@@ -25,7 +25,29 @@
         </div>
     </header>
 
-    <div x-data="pageModel" x-init="console.log('pagemode init')">
+    <div x-data="pageModel">
+
+        <div class="fullsize-image-popup-container"  style="display:none;" x-show="fullScreenCrab !== null" >
+            <div class="popup">
+                <div class="popup-banner">
+                    crab big!
+                    <div class="popup-close" @click="fullScreenCrab = null">
+                        <span class="material-icons">
+                            cancel
+                        </span>
+                    </div>
+                </div>
+                <div class="popup-content">
+                    
+                    <div class="fullsize-image-container" title="click for next image" @click.stop="fullScreenCrab.navigateImageNext()">
+                        <div class="image-count-display" title="click image to show next picture" x-text="fullScreenCrab?.images.length" x-show="fullScreenCrab?.images.length > 1"></div>
+                        <img :src="fullScreenCrab?.currentDisplayedImage().url" :alt="fullScreenCrab?.commonName + ' - ' + fullScreenCrab?.scientificName" alt="crab picture" />
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+
         <div class="details-popup-container" x-show="showCompareDialog">
             <div class="popup">
                 <div class="popup-banner">
@@ -50,7 +72,7 @@
                             <div class="crab-image-container" title="click for next image" @click="crab.navigateImageNext()">
                                 <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
                                 <img class="crab-image" :src="crab.currentDisplayedImage().url" alt="crab picture" />
-                                <span class="material-icons view-image-fullsize-trigger" title="Open image as large as possible" data-bind="click : function() { $parents[1].openImageFullsize($parents[0]); }">
+                                <span class="material-icons view-image-fullsize-trigger" title="Open image as large as possible" @click.stop="openFullScreen(crab)">
                                     zoom_out_map
                                 </span>
                                 <div class="previous-image-trigger" @click.stop="crab.navigateImagePrevious()" title="click for previous image" x-show="crab.images.length > 1">
@@ -136,12 +158,12 @@
             </div>
             <!-- x-for must be on a template item? keys are important if reordering? -->
             <template x-for="crab in filteredCrabs" :key="crab.scientificName">
-                <div class="crab-tile" @click="crab.navigateImageNext()">
+                <div class="crab-tile">
                     <div class="crab-title">
                         <div class="crab-scientific-name" x-text="crab.scientificName"></div>
                         <div class="crab-common-name"x-text="crab.commonName"></div>
                     </div>
-                    <div class="crab-image-container">
+                    <div class="crab-image-container" @click="crab.navigateImageNext()">
                         <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
                         <img class="crab-image" alt="hermit crab image" :src="crab.currentDisplayedImage().url" />
                         <div class="next-image-trigger" title="click for next image" @click.stop="crab.navigateImageNext()" x-show="crab.images.length > 1">
@@ -172,6 +194,11 @@
                             </a>
                         </div>
                         <div class="crab-links-right">
+                            <div class="crab-link" >
+                                <span class="material-icons" title="Open image as large as possible" @click.stop="openFullScreen(crab)">
+                                    zoom_out_map
+                                </span>
+                            </div>
                             <div class="crab-link" @click="crab.toggleMarkForCompare()" title="select this crab for comparing when you open the crab details popup">
                                 <span x-show="crab.markForCompare" class="material-icons">check_box</span>
                                 <span x-show="!crab.markForCompare" class="material-icons">check_box_outline_blank</span>

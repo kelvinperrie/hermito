@@ -261,14 +261,14 @@ function pageModel() {
             this.fullScreenCrab = null;
         },
         init() {
+            // load up that crabby data to create models
             for (let crabData of allCrabData) {
                 var crabModel = new CrabModel(crabData);
                 this.crabs.push(crabModel);
             }
+            // load up the filter models from the data
             for (let filterData of allFilterData) {
                 var filterModel = new FilterModel(filterData);
-                console.log("adding new filter")
-                console.log(filterModel)
                 this.filters.push(filterModel);
             }
             this.takeActionOnQueryParams();
