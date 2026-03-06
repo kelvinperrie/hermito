@@ -183,6 +183,7 @@ function pageModel() {
     return {
         crabs : [],     // the primary list of crabs
         filters : [],   // the collection of potential filters
+        fullScreenCrab : null,  // the crab that is open in the full screen popup
         // provides a filtered list of crabs, based on selections made to the filters
         get filteredCrabs() {
             return this.crabs.filter(
@@ -225,7 +226,7 @@ function pageModel() {
         openForCompareByScienificName(selectThese) {
             for(var i = 0; i < selectThese.length; i++) {
                 var crab = this.findCrabByScientificName(selectThese[i]);
-                // if there name is wrong (e.g. the url param gets messed up) then we might not find it I guess
+                // if the name is wrong (e.g. the url param gets messed up) then we might not find it I guess
                 if(crab) {
                     crab.markCompare();
                 } else {
@@ -234,7 +235,31 @@ function pageModel() {
             }
             this.showCompareDialog = true;
         },
-
+        // gets a url describing the current state of the popup; i.e. which crabs are being displayed in the popup
+        popupUrl() {
+            var baseUrl = window.location.href.split('?')[0];
+            var scientificNames = [];
+            for(var i = 0; i < this.markedCrabs.length; i++) {
+                scientificNames.push(this.markedCrabs[i].scientificName);
+            }
+            var params = "?compareByScientificName=" + scientificNames.join("|");
+            return baseUrl + params;
+        },
+        // examines the query string and activates any required options
+        takeActionOnQueryParams() {
+            var popupSelectedParams = QueryString.compareByScientificName;
+            if(popupSelectedParams) {
+                popupSelectedParams = decodeURI(popupSelectedParams);
+                var selectThese = popupSelectedParams.split("|");
+                this.openForCompareByScienificName(selectThese);
+            }
+        },
+        openFullScreen(crab) {
+            this.fullScreenCrab = crab;
+        },
+        closeFullScreen() {
+            this.fullScreenCrab = null;
+        },
         init() {
             for (let crabData of allCrabData) {
                 var crabModel = new CrabModel(crabData);
@@ -246,6 +271,7 @@ function pageModel() {
                 console.log(filterModel)
                 this.filters.push(filterModel);
             }
+            this.takeActionOnQueryParams();
         }
     }
 };

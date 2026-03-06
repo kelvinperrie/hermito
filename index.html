@@ -30,7 +30,7 @@
             <div class="popup">
                 <div class="popup-banner">
                     Crab details
-                    <a href="" title="right-click and copy this link to give to someone else to open this popup" data-bind="attr: { href : popupUrl }">
+                    <a href="" title="right-click and copy this link to give to someone else to open this popup" :href="popupUrl()" >
                         <span class="material-icons popup-link">
                             link
                         </span>
@@ -47,18 +47,18 @@
                             <div data-bind="" class="remove-crab-from-dialog-container"><span @click="crab.toggleMarkForCompare(); closeCompareIfNoCrabsSelected();" data-bind="visible: $parent.crabsForCompare().length > 1, click: function() { toggleForCompare(); }">remove this crab</span></div>
                             <div class="scientific-name" ><span x-text="crab.scientificName"></span></div>
                             <div class="common-name" x-text="crab.commonName"></div>
-                            <div class="crab-image-container" title="click for next image">
+                            <div class="crab-image-container" title="click for next image" @click="crab.navigateImageNext()">
                                 <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
                                 <img class="crab-image" :src="crab.currentDisplayedImage().url" alt="crab picture" />
                                 <span class="material-icons view-image-fullsize-trigger" title="Open image as large as possible" data-bind="click : function() { $parents[1].openImageFullsize($parents[0]); }">
                                     zoom_out_map
                                 </span>
-                                <div class="previous-image-trigger" @click="crab.navigateImagePrevious()" title="click for previous image" x-show="crab.images.length > 1">
+                                <div class="previous-image-trigger" @click.stop="crab.navigateImagePrevious()" title="click for previous image" x-show="crab.images.length > 1">
                                     <span class="material-icons">
                                         keyboard_arrow_left
                                     </span>
                                 </div>
-                                <div class="next-image-trigger" @click="crab.navigateImageNext()" title="click for next image" x-show="crab.images.length > 1">
+                                <div class="next-image-trigger" @click.stop="crab.navigateImageNext()" title="click for next image" x-show="crab.images.length > 1">
                                     <span class="material-icons">
                                         keyboard_arrow_right
                                     </span>
@@ -136,7 +136,7 @@
             </div>
             <!-- x-for must be on a template item? keys are important if reordering? -->
             <template x-for="crab in filteredCrabs" :key="crab.scientificName">
-                <div class="crab-tile">
+                <div class="crab-tile" @click="crab.navigateImageNext()">
                     <div class="crab-title">
                         <div class="crab-scientific-name" x-text="crab.scientificName"></div>
                         <div class="crab-common-name"x-text="crab.commonName"></div>
@@ -144,12 +144,12 @@
                     <div class="crab-image-container">
                         <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
                         <img class="crab-image" alt="hermit crab image" :src="crab.currentDisplayedImage().url" />
-                        <div class="next-image-trigger" title="click for next image" @click="crab.navigateImageNext()" x-show="crab.images.length > 1">
+                        <div class="next-image-trigger" title="click for next image" @click.stop="crab.navigateImageNext()" x-show="crab.images.length > 1">
                             <span class="material-icons">
                                 keyboard_arrow_right
                             </span>
                         </div>
-                        <div class="previous-image-trigger" title="click for previous image" @click="crab.navigateImagePrevious()" x-show="crab.images.length > 1">
+                        <div class="previous-image-trigger" title="click for previous image" @click.stop="crab.navigateImagePrevious()" x-show="crab.images.length > 1">
                             <span class="material-icons">
                                 keyboard_arrow_left
                             </span>
@@ -201,6 +201,7 @@
             </ul>
         </div>
     </footer>
+    <script src="scripts/polyfills.js"></script>
     <script src="scripts/hermit.js"></script>
 </body>
 </html>
