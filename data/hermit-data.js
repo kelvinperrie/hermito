@@ -25,7 +25,8 @@ var allCrabData = [
         ],
         images : [
             { url : "images/crabs/Pagurus novizealandiae 01.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/152989534", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
-            { url : "images/crabs/Pagurus novizealandiae 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
+            { url : "images/crabs/Pagurus novizealandiae 02.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } },
+            { url : "images/crabs/Pagurus novizealandiae 03.jpg", "attribution" : { "name" : "Kelvin Perrie", "link" : "https://inaturalist.nz/observations/111270247", "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/" } }
         ],
         references : [
             { id: 1, detail : "J. Forest, M. de S. Laurent, P.A. McLaughlin, R. Lemaitre. (2000) The Marine Fauna of New Zealand: Paguridea (Decapoda: Anomura) exclusive of the Lithodidae pp196-198). NIWA" },
