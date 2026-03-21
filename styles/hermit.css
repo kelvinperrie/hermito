@@ -9,6 +9,16 @@ h1 {
 }
 
 
+.pageContainer {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  /* grid-template-columns: 500px auto; */
+  grid-template-columns: repeat(auto-fit, 1fr );
+  grid-template-columns: auto-fit repeat(auto-fit, minmax(500px, auto));
+  gap: 20px;
+}
+
 /* header styles */
 header {
     margin-bottom: 1em;
@@ -356,10 +366,12 @@ footer {
 
 .filters-container{
     margin: 0.75em;
+    max-width: 450px;
 }
 .possible-values-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .possible-value-container{

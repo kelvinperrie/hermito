@@ -25,7 +25,7 @@
         </div>
     </header>
 
-    <div x-data="pageModel">
+    <div x-data="pageModel" class="pageContainer">
 
         <div class="fullsize-image-popup-container"  style="display:none;" x-show="fullScreenCrab !== null" >
             <div class="popup">
@@ -151,65 +151,67 @@
                 </div>
             </template>
         </div>
-        <div><span x-text="filteredCrabs.length"></span> crabs out of <span x-text="crabs.length"></span> match your filters:</div>
-        <div class="crab-tile-container">
-            <div class="crab-tile">
-                <img src="images/guide.png" alt="guide to hermit crab bits" />
-            </div>
-            <!-- x-for must be on a template item? keys are important if reordering? -->
-            <template x-for="crab in filteredCrabs" :key="crab.scientificName">
+        <div>
+            <div><span x-text="filteredCrabs.length"></span> crabs out of <span x-text="crabs.length"></span> match your filters:</div>
+            <div class="crab-tile-container">
                 <div class="crab-tile">
-                    <div class="crab-title">
-                        <div class="crab-scientific-name" x-text="crab.scientificName"></div>
-                        <div class="crab-common-name"x-text="crab.commonName"></div>
-                    </div>
-                    <div class="crab-image-container" @click="crab.navigateImageNext()">
-                        <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
-                        <img class="crab-image" alt="hermit crab image" :src="crab.currentDisplayedImage().url" />
-                        <div class="next-image-trigger" title="click for next image" @click.stop="crab.navigateImageNext()" x-show="crab.images.length > 1">
-                            <span class="material-icons">
-                                keyboard_arrow_right
-                            </span>
+                    <img src="images/guide.png" alt="guide to hermit crab bits" />
+                </div>
+                <!-- x-for must be on a template item? keys are important if reordering? -->
+                <template x-for="crab in filteredCrabs" :key="crab.scientificName">
+                    <div class="crab-tile">
+                        <div class="crab-title">
+                            <div class="crab-scientific-name" x-text="crab.scientificName"></div>
+                            <div class="crab-common-name"x-text="crab.commonName"></div>
                         </div>
-                        <div class="previous-image-trigger" title="click for previous image" @click.stop="crab.navigateImagePrevious()" x-show="crab.images.length > 1">
-                            <span class="material-icons">
-                                keyboard_arrow_left
-                            </span>
-                        </div>
-                        <div class="image-attribution-container" :title="'some rights reserved: ' + crab.currentDisplayedImage().attribution.name">
-                            <a target="_blank" :href="crab.currentDisplayedImage().attribution.licenseUrl">&copy;</a>
-                            <a target="_blank" :href="crab.currentDisplayedImage().attribution.link" x-text="crab.currentDisplayedImage().attribution.name "></a>
-                        </div>
-                    </div>
-                    <!-- <span x-text="crab.currentDisplayedImage().url"></span><br/> -->
-                    <div class="crab-links">
-                        <div class="crab-link">
-                            <a target="_blank" title="See more info on inaturalist.nz" :href="crab.inaturalistLink">
-                                <i class="material-icons">info</i>
-                            </a>
-                        </div>
-                        <div class="crab-link">
-                            <a target="_blank" title="See more images on inaturalist.nz" :href="crab.inaturalistImagesLink">
-                                <i class="material-icons">image</i>
-                            </a>
-                        </div>
-                        <div class="crab-links-right">
-                            <div class="crab-link" >
-                                <span class="material-icons" title="Open image as large as possible" @click.stop="openFullScreen(crab)">
-                                    zoom_out_map
+                        <div class="crab-image-container" @click="crab.navigateImageNext()">
+                            <div class="image-count-display" title="click image to show next picture" x-text="crab.images.length" x-show="crab.images.length > 1"></div>
+                            <img class="crab-image" alt="hermit crab image" :src="crab.currentDisplayedImage().url" />
+                            <div class="next-image-trigger" title="click for next image" @click.stop="crab.navigateImageNext()" x-show="crab.images.length > 1">
+                                <span class="material-icons">
+                                    keyboard_arrow_right
                                 </span>
                             </div>
-                            <div class="crab-link" @click="crab.toggleMarkForCompare()" title="select this crab for comparing when you open the crab details popup">
-                                <span x-show="crab.markForCompare" class="material-icons">check_box</span>
-                                <span x-show="!crab.markForCompare" class="material-icons">check_box_outline_blank</span>
+                            <div class="previous-image-trigger" title="click for previous image" @click.stop="crab.navigateImagePrevious()" x-show="crab.images.length > 1">
+                                <span class="material-icons">
+                                    keyboard_arrow_left
+                                </span>
                             </div>
-                            <div class="crab-link"  @click="crab.markCompare();toggleCompareDialog()" title="open the details of this and any other selected crab">
-                                <span class="material-icons">zoom_in</span>
+                            <div class="image-attribution-container" :title="'some rights reserved: ' + crab.currentDisplayedImage().attribution.name">
+                                <a target="_blank" :href="crab.currentDisplayedImage().attribution.licenseUrl">&copy;</a>
+                                <a target="_blank" :href="crab.currentDisplayedImage().attribution.link" x-text="crab.currentDisplayedImage().attribution.name "></a>
+                            </div>
+                        </div>
+                        <!-- <span x-text="crab.currentDisplayedImage().url"></span><br/> -->
+                        <div class="crab-links">
+                            <div class="crab-link">
+                                <a target="_blank" title="See more info on inaturalist.nz" :href="crab.inaturalistLink">
+                                    <i class="material-icons">info</i>
+                                </a>
+                            </div>
+                            <div class="crab-link">
+                                <a target="_blank" title="See more images on inaturalist.nz" :href="crab.inaturalistImagesLink">
+                                    <i class="material-icons">image</i>
+                                </a>
+                            </div>
+                            <div class="crab-links-right">
+                                <div class="crab-link" >
+                                    <span class="material-icons" title="Open image as large as possible" @click.stop="openFullScreen(crab)">
+                                        zoom_out_map
+                                    </span>
+                                </div>
+                                <div class="crab-link" @click="crab.toggleMarkForCompare()" title="select this crab for comparing when you open the crab details popup">
+                                    <span x-show="crab.markForCompare" class="material-icons">check_box</span>
+                                    <span x-show="!crab.markForCompare" class="material-icons">check_box_outline_blank</span>
+                                </div>
+                                <div class="crab-link"  @click="crab.markCompare();toggleCompareDialog()" title="open the details of this and any other selected crab">
+                                    <span class="material-icons">zoom_in</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </template>
+                </template>
+            </div>
         </div>
     </div>
     <footer class="row">
