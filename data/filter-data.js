@@ -29,7 +29,7 @@ var allFilterData = [
         key : "outerClawSurface",
         possibleValues : [
             { key : "smallBumps", text : "Moslty Bumps", image: "images/outerClawSurface-smallBumps.png" },
-            { key : "smooth", text : "Smooth", image: "images/outerClawSurface-smooth.png" },
+            { key : "smooth", text : "Mostly Smooth", image: "images/outerClawSurface-smooth.png" },
             { key : "furry", text : "Furry", image: "images/outerClawSurface-furry.png" },
             { key : "lined", text : "Lined", image: "images/outerClawSurface-lined.png" },
         ],
@@ -51,7 +51,7 @@ var allFilterData = [
             { key : "blue", text : "Blue", image: "images/antenaeColour-blue.png" },
             { key : "maroonWhiteBands", text : "Maroon with white bands", image: "images/antenaeColour-maroonWhiteBands.png" },
         ],
-        question : "What is the outer suface of the claw like",
+        question : "What colour are the antenae",
         helpText: "."
     }
 ]
