@@ -109,7 +109,7 @@
                                 Simlar crabs:
                                 <ul>
                                     <template x-for="similar in crab.similarTo" :key="similar.key">
-                                        <li><span x-text="similar.label"></span><span class="details-compare-link" @click="openForCompareByScienificName([similar.key])">compare</span></li>
+                                        <li><span x-text="similar.label"></span><span class="details-compare-link" title="Show this crab in the details window" @click="openForCompareByScienificName([similar.key])">compare</span></li>
                                     </template>
                                     <li x-show="crab.similarTo.length === 0">none</li>
                                 </ul>
